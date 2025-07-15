@@ -1,26 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, MapPin } from "lucide-react";
 
 const slides = [
-  {
-    image: "/slides/s4.png",
-    title: "ICMISI-2025",
-    subtitle:
-      "International Conference on Sustainable Energy and Advanced Manufacturing Systems",
-  },
-  {
-    image: "/slides/s1.png",
-    title: "Advanced Manufacturing",
-    subtitle:
-      "Bridging research and industry in smart and digital manufacturing",
-  },
-  {
-    image: "/slides/s3.png",
-    title: "Sustainable Energy",
-    subtitle:
-      "Exploring innovations in renewable energy technologies and solutions",
-  },
+  { image: "/slides/s0.png" },
+  { image: "/slides/s1.png" },
+  { image: "/slides/s2.png" },
+  { image: "/slides/s4.png" },
+  { image: "/slides/s3.png" },
 ];
 
 const Hero: React.FC = () => {
@@ -30,12 +15,11 @@ const Hero: React.FC = () => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative h-[80vh] max-h-[500px] overflow-hidden">
+    <div className="relative w-full h-[25vh] sm:h-[70vh] md:h-[80vh] max-h-[500px] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -45,24 +29,21 @@ const Hero: React.FC = () => {
           }`}
         >
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${slide.image})`,
-            }}
+            className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+            style={{ backgroundImage: `url(${slide.image})` }}
           />
-  
         </div>
       ))}
 
       {/* Slide indicators */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2">
+      <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
               index === currentSlide
-                ? "bg-conference-orange w-8"
+                ? "bg-conference-orange w-6"
                 : "bg-white bg-opacity-50 hover:bg-opacity-70"
             }`}
             aria-label={`Go to slide ${index + 1}`}
