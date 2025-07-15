@@ -35,65 +35,55 @@ const Member: React.FC<MemberProps> = ({ name, role, type, delay = 0 }) => {
 
 const OrganizingCommittee: React.FC = () => {
   const chiefPatrons = [
-    { name: "K. V. Vishnu Raju", role: "Chairman, Sri Vishnu Educational Society, INDIA" },
-    { name: "Ravichandran Rajagopal", role: "Vice-Chairman, Sri Vishnu Educational Society, INDIA" },
-    { name: "K. Aditya Vissam", role: "Secretary, Sri Vishnu Educational Society, INDIA" },
-    { name: "K. Sai Sumant", role: "Joint Secretary, Sri Vishnu Educational Society, INDIA" },
+    { name: "K.V. Vishnu Raju", role: "Chairman, Sri Vishnu Educational Society" },
+    { name: "Ravichandran Rajagopal", role: "Vice-Chairman, Sri Vishnu Educational Society" },
+    { name: "K. Aditya Vissam", role: "Secretary, Sri Vishnu Educational Society" },
   ];
 
   const coPatrons = [
-    { name: "K. Lakshmi Prasad", role: "Director, BVRIT Narsapur, INDIA" },
-    { name: "Sanjay Dubey", role: "Principal, BVRIT Narsapur, INDIA" },
+    { name: "M. Venu", role: "Principal, Vishnu Institute of Technology, Bhimavaram, INDIA" },
+    { name: "M. Srilakshmi", role: "Vice-Principal, Vishnu Institute of Technology, Bhimavaram, INDIA" },
   ];
 
   const chairs = [
-    { name: "Dr. Shuichi TORII", role: "Conference Chair, Kurume Institute of Technology, JAPAN" },
-    { name: "V Murali Krishna", role: "Conference Co-Chair, Dean Academics, BVRIT Narsapur, INDIA" },
-    { name: "Raju AEDLA", role: "Technical Chair, Dean – R&D, VEDIC, SVES" },
-    { name: "A Varun", role: "Organizing Chair, HoD, Mechanical Engineering, BVRIT Narsapur, INDIA" },
-    { name: "M Sandeep Kumar", role: "Organizing Co-Chair, Associate Head, Mechanical Engg., BVRIT Narsapur, INDIA" },
+    { name: "Trilok Nath Singh", role: "Conference Chair, Director, IIT Patna, INDIA" },
+    { name: "Krishna R Reddy", role: "Conference Chair, University of Illinois, Chicago, USA" },
+    { name: "Edy Tonnizam Mohamad", role: "Conference Co-Chair, Universiti Teknologi Malaysia, MALAYSIA" },
+    { name: "Raju Aedla", role: "Technical Chair, Dean R&D, VEDIC, SVES, INDIA" },
+    { name: "Deepak T J", role: "Technical Co-Chair, Universiti Teknologi MARA (UiTM), MALAYSIA" },
+    { name: "Kunamineni Vijay", role: "Organizing Chair, Head, Civil Engg., VITB, INDIA" },
   ];
 
   const secretaries = [
-    { name: "M Vishnu Vardhan Reddy", role: "Organizing Secretary, Assistant Professor, BVRIT Narsapur, INDIA" },
-    { name: "Korra Nagu", role: "Joint Secretary, Assistant Professor, BVRIT Narsapur, INDIA" },
-    { name: "R. Naresh", role: "Treasurer, Assistant Professor, BVRIT Narsapur, INDIA" },
+    { name: "V S J Yeswanth Paluri", role: "Organizing Secretary, Assoc. Prof., Dept. of CE, VIT-Bhimavaram" },
+    { name: "Sk Subhan Alisha", role: "Organizing Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram" },
+    { name: "M Teja", role: "Joint Secretary, Assoc. Prof., Dept. of CE, VIT-Bhimavaram" },
+    { name: "B D V. Prasad", role: "Joint Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram" },
+    { name: "B.M Devika", role: "Joint Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram" },
   ];
 
   const coreCommittee = [
-    { name: "D V Raju", role: "Dean, Consultancy" },
-    { name: "P Senthil Kumar", role: "Professor" },
-    { name: "A Padma Rao", role: "Professor" },
-    { name: "K Obula Reddy", role: "Associate Professor" },
-    { name: "Manzoor Hadi", role: "Associate Professor" },
-    { name: "R Muthalagu", role: "Assistant Professor" },
-    { name: "R Venkatesh Kumar", role: "Assistant Professor" },
-    { name: "P Naresh Kumar Reddy", role: "Assistant Professor" },
-    { name: "Waseem Ahamed", role: "Assistant Professor" },
-    { name: "Anil Babu", role: "Assistant Professor" },
-    { name: "Vijaya Sarathi", role: "Assistant Professor" },
-    { name: "P Sangamesh", role: "Assistant Professor" },
-    { name: "Akshay Kulkarni", role: "Assistant Professor" },
+    { name: "VVS Sarma", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "P. Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "K S. Saikumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "M. Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "P. Fayaz", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "K. Sree Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "CH Bharat Chandra", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
   ];
 
   const executiveCommittee = [
-    { name: "A. Jagan", role: "Dean (IQAC), BVRITN" },
-    { name: "N Bhoopal", role: "Dean (Administration), BVRITN" },
-    { name: "H Srujana", role: "HoD, Biomedical Engineering, BVRITN" },
-    { name: "G. B. Radhika", role: "HoD, Chemical Engineering, BVRITN" },
-    { name: "Ch. Madhubabu", role: "HoD, CSE, BVRITN" },
-    { name: "Dasaradh Ramaiah", role: "HoD, IT, BVRITN" },
-    { name: "B. R. Sanjeeva Reddy", role: "HoD, ECE, BVRITN" },
-    { name: "K. Rayudu", role: "HoD, EEE, BVRITN" },
-    { name: "S. Krishna Rao", role: "HoD, Civil Engineering, BVRITN" },
-    { name: "B. Mrunalini Sasanka", role: "HoD, Freshman Engineering, BVRITN" },
-    { name: "I. Nageswara Rao", role: "HoD, MBA, BVRITN" },
-    { name: "P. Vishnu", role: "HoD, Pharmaceutical Engineering, BVRITN" },
-    { name: "K. Purnachand", role: "Coordinator, CSE Data Science, BVRITN" },
-    { name: "G. Uday Kiran", role: "Coordinator, AI & ML, BVRITN" },
-    { name: "K. Bhima", role: "Coordinator, CSBS, BVRITN" },
-    { name: "R. Pitchai", role: "Associate Dean (R&D), BVRITN" },
-    { name: "K. Sainadh Singh", role: "Associate Dean (IQAC), BVRITN" },
+    { name: "Sumit Gupta", role: "Dean, Campus Recruitment and Training, VITB, INDIA" },
+    { name: "D.J. Nagendra Kumar", role: "Dean - Evaluation, VITB, INDIA" },
+    { name: "N. Padmavathy", role: "Dean - Research and Development, VITB, INDIA" },
+    { name: "Abhinav Dayal", role: "Dean - Advanced Learning, VITB, INDIA" },
+    { name: "V. Rama Devi", role: "HOD-BS, VITB, INDIA" },
+    { name: "K. Srinivas", role: "HOD-ECE, VITB, INDIA" },
+    { name: "R. Srinivasa Raju", role: "HOD-CSE, VITB, INDIA" },
+    { name: "P.S.R. Murty", role: "HOD-AIDS, VITB, INDIA" },
+    { name: "N Naga Krishna", role: "HOD-ME, VITB, INDIA" },
+    { name: "R V D Ramarao", role: "HOD-EEE, VITB, INDIA" },
+    { name: "D G Krishna Mohan", role: "HOD-AI&ML, VITB, INDIA" },
   ];
 
   return (
@@ -108,11 +98,12 @@ const OrganizingCommittee: React.FC = () => {
       </div>
 
       {[
-        { title: "Chief Patrons & Patrons", list: [...chiefPatrons, ...coPatrons], type: 'chief' },
-        { title: "Chairs", list: chairs, type: 'chair' },
+        { title: "Chief Patrons", list: chiefPatrons, type: 'chief' },
+        { title: "Chief Co-Patrons", list: coPatrons, type: 'chief' },
+        { title: "Conference Chairs & Technical Committee", list: chairs, type: 'chair' },
         { title: "Secretaries", list: secretaries, type: 'secretary' },
-        { title: "Core Committee", list: coreCommittee, type: 'member' },
-        { title: "Executive Committee", list: executiveCommittee, type: 'member' },
+        { title: "Organizing Committee Members", list: coreCommittee, type: 'member' },
+        { title: "Internal Advisory Committee", list: executiveCommittee, type: 'member' },
       ].map((section, idx) => (
         <div key={section.title} className="mb-10">
           <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2" data-aos="fade-up">

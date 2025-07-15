@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Contact the organizers of ICSEAMS-2025 for any queries related to the conference, paper submissions, registration, or sponsorship."
+        description="Contact the organizers of ICMISI-2025 for any queries related to the conference, paper submissions, registration, or sponsorship."
         canonical="/contact"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Get in touch with the ICSEAMS-2025 organizing team
+            Get in touch with the ICMISI-2025 organizing team
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                 Contact Information
               </h2>
               <p className="text-gray-700 mb-8">
-                If you have any questions about ICSEAMS-2025, please don't
+                If you have any questions about ICMISI-2025, please don't
                 hesitate to contact us. Our team is here to assist you with any
                 queries related to paper submissions, registration, venue, or
                 other conference matters.
@@ -60,10 +60,10 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <a
-                      href="mailto:icseams@bvrit.ac.in"
+                      href="mailto:ICMISI@bvrit.ac.in"
                       className="text-conference-orange hover:underline"
                     >
-                      icseams@bvrit.ac.in
+                      ICMISI@bvrit.ac.in
                     </a>
                     <p className="text-gray-600 text-sm mt-1">
                       For general inquiries
@@ -243,10 +243,10 @@ const ContactPage: React.FC = () => {
                   publication:
                 </p>
                 <a
-                  href="mailto:icseams.papers@bvrit.ac.in"
+                  href="mailto:ICMISI.papers@bvrit.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  icseams.papers@bvrit.ac.in
+                  ICMISI.papers@bvrit.ac.in
                 </a>
               </div>
 
@@ -258,10 +258,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to conference registration or payment:
                 </p>
                 <a
-                  href="mailto:icseams.registration@bvrit.ac.in"
+                  href="mailto:ICMISI.registration@bvrit.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  icseams.registration@bvrit.ac.in
+                  ICMISI.registration@bvrit.ac.in
                 </a>
               </div>
 
@@ -273,10 +273,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to sponsorship opportunities:
                 </p>
                 <a
-                  href="mailto:icseams.sponsors@bvrit.ac.in"
+                  href="mailto:ICMISI.sponsors@bvrit.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  icseams.sponsors@bvrit.ac.in
+                  ICMISI.sponsors@bvrit.ac.in
                 </a>
               </div>
             </div>

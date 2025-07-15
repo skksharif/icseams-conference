@@ -11,12 +11,12 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({ 
   title, 
   description = "International Conference on Sustainable Energy and Advanced Manufacturing Systems, to be held from 11th–13th September 2025 at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India.",
-  keywords = "ICSEAMS, Conference, Sustainable Energy, Advanced Manufacturing, BVRIT, Engineering Conference",
+  keywords = "ICMISI, Conference, Sustainable Energy, Advanced Manufacturing, VIT, Engineering Conference",
   canonical
 }) => {
   const siteTitle = title 
-    ? `${title} | ICSEAMS-2025` 
-    : "ICSEAMS-2025 | International Conference on Sustainable Energy and Advanced Manufacturing Systems";
+    ? `${title} | ICMISI-2025` 
+    : "ICMISI-2025";
 
   return (
     <Helmet>

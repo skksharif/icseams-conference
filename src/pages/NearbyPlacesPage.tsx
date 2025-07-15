@@ -170,11 +170,6 @@ const NearbyPlacesPage: React.FC = () => {
 
   return (
     <>
-      <SEO
-        title="Nearby Places"
-        description="Explore attractions, accommodations, dining options, and transportation near BVRIT, the venue for ICSEAMS-2025."
-        canonical="/nearby-places"
-      />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-green/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h1
@@ -194,138 +189,10 @@ const NearbyPlacesPage: React.FC = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12" data-aos="fade-up">
-            <p className="text-gray-700">
-              While attending ICSEAMS-2025, take some time to explore the
-              surrounding areas. From natural attractions to cultural landmarks,
-              there's much to discover near the conference venue.
-            </p>
-          </div>
-
-          {/* Tourist Attractions */}
-          <div className="mb-16">
-            <h2
-              className="text-2xl font-bold text-gray-800 mb-8 flex items-center"
-              data-aos="fade-up"
-            >
-              <Landmark size={24} className="text-conference-purple mr-2" />
-              Tourist Attractions
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {attractions.map((place, index) => (
-                <Place
-                  key={place.name}
-                  name={place.name}
-                  description={place.description}
-                  distance={place.distance}
-                  image={place.image}
-                  type={place.type}
-                  delay={index * 100}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Accommodation */}
-          <div className="mb-16">
-            <h2
-              className="text-2xl font-bold text-gray-800 mb-8 flex items-center"
-              data-aos="fade-up"
-            >
-              <Hotel size={24} className="text-conference-orange mr-2" />
-              Accommodation
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {hotels.map((place, index) => (
-                <Place
-                  key={place.name}
-                  name={place.name}
-                  description={place.description}
-                  distance={place.distance}
-                  image={place.image}
-                  type={place.type}
-                  delay={index * 100}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Dining Options */}
-          <div className="mb-16">
-            <h2
-              className="text-2xl font-bold text-gray-800 mb-8 flex items-center"
-              data-aos="fade-up"
-            >
-              <Utensils size={24} className="text-conference-green mr-2" />
-              Dining Options
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {restaurants.map((place, index) => (
-                <Place
-                  key={place.name}
-                  name={place.name}
-                  description={place.description}
-                  distance={place.distance}
-                  image={place.image}
-                  type={place.type}
-                  delay={index * 100}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Transportation */}
-          <div data-aos="fade-up">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
-              Transportation Options
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                    <Plane className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <h3 className="font-semibold text-gray-800">Air Travel</h3>
-                </div>
-                <p className="text-gray-600 text-sm">
-                  Rajiv Gandhi International Airport in Hyderabad is the nearest
-                  airport, about 70 km from BVRIT. Taxis and cab services are
-                  available from the airport.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                    <Train className="w-5 h-5 text-green-600" />
-                  </div>
-                  <h3 className="font-semibold text-gray-800">Rail Travel</h3>
-                </div>
-                <p className="text-gray-600 text-sm">
-                  Secunderabad and Hyderabad railway stations are 50-60 km from
-                  BVRIT. Local transportation options connect these stations to
-                  the venue.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center mr-3">
-                    <Bus className="w-5 h-5 text-orange-600" />
-                  </div>
-                  <h3 className="font-semibold text-gray-800">
-                    Local Transport
-                  </h3>
-                </div>
-                <p className="text-gray-600 text-sm">
-                  Auto-rickshaws, taxis, and local buses are available for
-                  transportation within Narsapur and surrounding areas. The
-                  conference will also arrange shuttle services.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="w-full h-[30vh]">
+          <p className="text-center text-3xl md:text-4xl font-bold mb-4 mt-10">
+            Updated Soon
+          </p>
         </div>
       </div>
     </>

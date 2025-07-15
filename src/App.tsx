@@ -44,7 +44,7 @@ function App() {
         <Route path="publication" element={<PublicationPage />} />
         <Route path="venue" element={<VenuePage />} />
         <Route path="sponsors" element={<SponsorsPage />} />
-        <Route path="nearby-places" element={<NearbyPlacesPage />} />
+        <Route path="accomodation" element={<NearbyPlacesPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

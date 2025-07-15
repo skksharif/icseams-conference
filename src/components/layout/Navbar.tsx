@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, LightbulbIcon } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown, LightbulbIcon } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -31,35 +31,38 @@ const Navbar: React.FC = () => {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { 
-      name: 'Committee', 
-      path: '/committee',
+    { name: "Home", path: "/" },
+    {
+      name: "Committee",
+      path: "/committee",
       dropdown: [
-        { name: 'Advisory Committee', path: '/committee/advisory' },
-        { name: 'Technical Committee', path: '/committee/technical' },
-        { name: 'Organizing Committee', path: '/committee/organizing' }
-      ]
+        { name: "Advisory Committee", path: "/committee/advisory" },
+          { name: "Technical Committee", path: "/committee/technical" },
+        { name: "Organizing Committee", path: "/committee/organizing" },
+      ],
     },
-    { name: 'Call for Papers', path: '/call-for-papers' },
-    { name: 'Speakers', path: '/speakers' },
-    { name: 'Registration', path: '/registration' },
-    { name: 'Important Dates', path: '/important-dates' },
-    { name: 'Publication', path: '/publication' },
-    { name: 'Venue', path: '/venue' },
-    { name: 'Sponsors', path: '/sponsors' },
-    { name: 'Nearby Places', path: '/nearby-places' },
-    { name: 'Contact', path: '/contact' }
+    { name: "CFP", path: "/call-for-papers" },
+    { name: "Publication", path: "/publication" },
+    { name: "Speakers", path: "/speakers" },
+    { name: "Registration", path: "/registration" },
+    { name: "Important Dates", path: "/important-dates" },
+    { name: "Sponsors", path: "/sponsors" },
+
+    { name: "Venue", path: "/venue" },
+
+    { name: "Accomodation", path: "/accomodation" },
   ];
 
   return (
-    <header className={`sticky top-0 z-50 w-full ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} transition-all duration-300`}>
+    <header
+      className={`sticky top-0 z-50 w-full ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      } transition-all duration-300`}
+    >
       <nav className="max-w-site mx-auto px-6 py-1">
         <div className="flex justify-between items-center">
-       
-
           {/* Mobile menu button */}
-          <button 
+          <button
             className="lg:hidden text-gray-700 hover:text-conference-green"
             onClick={toggleMenu}
             aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -69,42 +72,42 @@ const Navbar: React.FC = () => {
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex items-center space-x-1">
-            {navLinks.map((link) => 
+            {navLinks.map((link) =>
               !link.dropdown ? (
-                <NavLink 
+                <NavLink
                   key={link.path}
                   to={link.path}
-                  className={({ isActive }) => 
+                  className={({ isActive }) =>
                     `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
-                      isActive 
-                        ? 'text-conference-green'
-                        : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
+                      isActive
+                        ? "text-conference-green"
+                        : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
                     }`
                   }
                 >
                   {link.name}
                 </NavLink>
               ) : (
-                <div 
+                <div
                   key={link.path}
                   className="relative"
                   onMouseEnter={() => setCommitteeDropdownOpen(true)}
                   onMouseLeave={() => setCommitteeDropdownOpen(false)}
                 >
-                  <NavLink 
+                  <NavLink
                     to={link.path}
-                    className={({ isActive }) => 
+                    className={({ isActive }) =>
                       `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center ${
                         isActive || location.pathname.includes(link.path)
-                          ? 'text-conference-green'
-                          : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
+                          ? "text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
                       }`
                     }
                   >
                     {link.name}
                     <ChevronDown size={16} className="ml-1" />
                   </NavLink>
-                  
+
                   {committeeDropdownOpen && (
                     <div className="absolute left-0 mt-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 animate-fade-in">
                       <div className="py-1">
@@ -112,11 +115,11 @@ const Navbar: React.FC = () => {
                           <NavLink
                             key={dropdownItem.path}
                             to={dropdownItem.path}
-                            className={({ isActive }) => 
+                            className={({ isActive }) =>
                               `block px-4 py-2 text-sm ${
-                                isActive 
-                                  ? 'bg-gray-100 text-conference-green font-bold'
-                                  : 'text-gray-700 hover:bg-gray-100 hover:text-conference-green'
+                                isActive
+                                  ? "bg-gray-100 text-conference-green font-bold"
+                                  : "text-gray-700 hover:bg-gray-100 hover:text-conference-green"
                               }`
                             }
                           >
@@ -129,6 +132,12 @@ const Navbar: React.FC = () => {
                 </div>
               )
             )}
+            <a
+              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 hover:text-conference-green hover:bg-gray-100`}
+              href="https://iopscience.iop.org/issue/1742-6596/2779/1"
+            >
+              ICMISI-2024(IOP)
+            </a>
           </div>
         </div>
 
@@ -136,16 +145,16 @@ const Navbar: React.FC = () => {
         {isOpen && (
           <div className="lg:hidden mt-4 bg-white rounded-lg shadow-xl p-4 animate-fade-in">
             <div className="flex flex-col space-y-2">
-              {navLinks.map((link) => 
+              {navLinks.map((link) =>
                 !link.dropdown ? (
                   <NavLink
                     key={link.path}
                     to={link.path}
-                    className={({ isActive }) => 
+                    className={({ isActive }) =>
                       `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
-                        isActive 
-                          ? 'bg-gray-100 text-conference-green'
-                          : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
+                        isActive
+                          ? "bg-gray-100 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
                       }`
                     }
                     onClick={closeMenu}
@@ -157,31 +166,33 @@ const Navbar: React.FC = () => {
                     <button
                       className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                         location.pathname.includes(link.path)
-                          ? 'bg-gray-100 text-conference-green'
-                          : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
+                          ? "bg-gray-100 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
                       }`}
-                      onClick={() => setCommitteeDropdownOpen(!committeeDropdownOpen)}
+                      onClick={() =>
+                        setCommitteeDropdownOpen(!committeeDropdownOpen)
+                      }
                     >
                       {link.name}
-                      <ChevronDown 
-                        size={16} 
+                      <ChevronDown
+                        size={16}
                         className={`ml-1 transition-transform duration-200 ${
-                          committeeDropdownOpen ? 'rotate-180' : ''
-                        }`} 
+                          committeeDropdownOpen ? "rotate-180" : ""
+                        }`}
                       />
                     </button>
-                    
+
                     {committeeDropdownOpen && (
                       <div className="ml-4 mt-1 border-l-2 border-gray-200 pl-4 animate-fade-in">
                         {link.dropdown.map((dropdownItem) => (
                           <NavLink
                             key={dropdownItem.path}
                             to={dropdownItem.path}
-                            className={({ isActive }) => 
+                            className={({ isActive }) =>
                               `block px-3 py-2 rounded-md text-sm ${
-                                isActive 
-                                  ? 'text-conference-green font-bold'
-                                  : 'text-gray-700 hover:text-conference-green'
+                                isActive
+                                  ? "text-conference-green font-bold"
+                                  : "text-gray-700 hover:text-conference-green"
                               }`
                             }
                             onClick={closeMenu}
@@ -194,6 +205,12 @@ const Navbar: React.FC = () => {
                   </div>
                 )
               )}
+              <a
+                className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-20`}
+                onClick={closeMenu}
+              >
+                ICMISI - 2024(IOP)
+              </a>
             </div>
           </div>
         )}
