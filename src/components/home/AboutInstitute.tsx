@@ -4,25 +4,25 @@ import { Award, BookOpen, Users, Globe } from "lucide-react";
 const AboutInstitute: React.FC = () => {
   const features = [
     {
-      icon: <Award className="w-8 h-8 text-conference-purple" />,
+      icon: <Award className="w-8 h-8 text-pink-600" />,
       title: "Academic Excellence",
       description:
         "BVRIT is known for its academic rigor and excellence in engineering education.",
     },
     {
-      icon: <BookOpen className="w-8 h-8 text-conference-purple" />,
+      icon: <BookOpen className="w-8 h-8 text-pink-600" />,
       title: "Research Focus",
       description:
         "Strong emphasis on research with state-of-the-art laboratories and facilities.",
     },
     {
-      icon: <Users className="w-8 h-8 text-conference-purple" />,
+      icon: <Users className="w-8 h-8 text-pink-600" />,
       title: "Industry Partnerships",
       description:
         "Collaborations with leading industry partners for practical exposure.",
     },
     {
-      icon: <Globe className="w-8 h-8 text-conference-purple" />,
+      icon: <Globe className="w-8 h-8 text-pink-600" />,
       title: "Global Connections",
       description:
         "International collaborations for a global perspective in education.",

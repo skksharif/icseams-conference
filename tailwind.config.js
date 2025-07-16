@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'conference-green': 'rgb(100,171,34)',
-        'conference-orange': 'rgb(244,113,23)',
-        'conference-purple': 'rgb(138,19,102)',
+        'conference-green': 'rgb(236,72,153)', // Hot pink
+        'conference-orange': 'rgb(244,114,182)', // Pink-400
+        'conference-purple': 'rgb(190,24,93)', // Pink-700
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

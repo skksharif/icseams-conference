@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
                     `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                       isActive
                         ? "text-conference-green"
-                        : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
+                        : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
                     }`
                   }
                 >
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                       `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center ${
                         isActive || location.pathname.includes(link.path)
                           ? "text-conference-green"
-                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
+                          : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
                       }`
                     }
                   >
@@ -118,8 +118,8 @@ const Navbar: React.FC = () => {
                             className={({ isActive }) =>
                               `block px-4 py-2 text-sm ${
                                 isActive
-                                  ? "bg-gray-100 text-conference-green font-bold"
-                                  : "text-gray-700 hover:bg-gray-100 hover:text-conference-green"
+                                  ? "bg-pink-50 text-conference-green font-bold"
+                                  : "text-gray-700 hover:bg-pink-50 hover:text-conference-green"
                               }`
                             }
                           >
@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
               )
             )}
             <a
-              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 hover:text-conference-green hover:bg-gray-100`}
+              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 hover:text-conference-green hover:bg-pink-50`}
               href="https://iopscience.iop.org/issue/1742-6596/2779/1"
             >
               ICMISI-2024(IOP)
@@ -153,8 +153,8 @@ const Navbar: React.FC = () => {
                     className={({ isActive }) =>
                       `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                         isActive
-                          ? "bg-gray-100 text-conference-green"
-                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
+                          ? "bg-pink-50 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
                       }`
                     }
                     onClick={closeMenu}
@@ -166,8 +166,8 @@ const Navbar: React.FC = () => {
                     <button
                       className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                         location.pathname.includes(link.path)
-                          ? "bg-gray-100 text-conference-green"
-                          : "text-gray-700 hover:text-conference-green hover:bg-gray-100"
+                          ? "bg-pink-50 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
                       }`}
                       onClick={() =>
                         setCommitteeDropdownOpen(!committeeDropdownOpen)
@@ -183,7 +183,7 @@ const Navbar: React.FC = () => {
                     </button>
 
                     {committeeDropdownOpen && (
-                      <div className="ml-4 mt-1 border-l-2 border-gray-200 pl-4 animate-fade-in">
+                      <div className="ml-4 mt-1 border-l-2 border-pink-200 pl-4 animate-fade-in">
                         {link.dropdown.map((dropdownItem) => (
                           <NavLink
                             key={dropdownItem.path}

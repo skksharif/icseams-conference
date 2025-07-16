@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* Conference Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <LightbulbIcon className="w-6 h-6 text-conference-orange" />
+              <LightbulbIcon className="w-6 h-6 text-pink-400" />
               <h2 className="text-xl font-bold">ICMISI-2025</h2>
             </div>
             <p className="text-gray-300 mb-4">

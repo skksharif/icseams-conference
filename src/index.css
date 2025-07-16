@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --primary-green: 100, 171, 34;
-  --secondary-orange: 244, 113, 23;
-  --secondary-purple: 138, 19, 102;
+  --primary-green: 236, 72, 153;
+  --secondary-orange: 244, 114, 182;
+  --secondary-purple: 190, 24, 93;
 }
 
 html {
@@ -33,15 +33,15 @@ p {
 
 @layer components {
   .btn-primary {
-    @apply bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+    @apply bg-pink-600 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
   }
   
   .btn-secondary {
-    @apply bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+    @apply bg-pink-500 hover:bg-pink-600 text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
   }
   
   .btn-outline {
-    @apply border border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
+    @apply border border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white font-medium py-2 px-4 rounded-md transition-all duration-300;
   }
   
   .section-title {
