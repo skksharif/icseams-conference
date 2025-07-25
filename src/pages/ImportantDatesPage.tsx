@@ -30,8 +30,7 @@ const DateItem: React.FC<DateItemProps> = ({
           ? "bg-red-50 border border-red-200"
           : "bg-white border border-gray-200 hover:border-conference-orange/30 hover:shadow-md"
       }`}
-      data-aos="fade-up"
-      data-aos-delay={delay}
+
     >
       <div
         className={`p-2 rounded-full mr-4 ${
@@ -98,14 +97,11 @@ const ImportantDatesPage: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1
             className="text-3xl md:text-4xl font-bold mb-4"
-            data-aos="fade-up"
           >
             Important Dates
           </h1>
           <p
             className="max-w-3xl mx-auto text-lg opacity-90"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             Key deadlines and milestones for ICMISI-2025
           </p>
@@ -114,7 +110,7 @@ const ImportantDatesPage: React.FC = () => {
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-8 text-center" data-aos="fade-up">
+          <div className="mb-8 text-center">
             <p className="text-gray-700">
               Please note all the following important dates related to
               ICMISI-2025. Mark your calendars and ensure timely submissions to

@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       path: "/committee",
       dropdown: [
         { name: "Advisory Committee", path: "/committee/advisory" },
-          { name: "Technical Committee", path: "/committee/technical" },
+        { name: "Technical Committee", path: "/committee/technical" },
         { name: "Organizing Committee", path: "/committee/organizing" },
       ],
     },
@@ -45,12 +45,11 @@ const Navbar: React.FC = () => {
     { name: "Publication", path: "/publication" },
     { name: "Speakers", path: "/speakers" },
     { name: "Registration", path: "/registration" },
-    { name: "Important Dates", path: "/important-dates" },
+    { name: "Imp Dates", path: "/important-dates" },
     { name: "Sponsors", path: "/sponsors" },
-
     { name: "Venue", path: "/venue" },
-
     { name: "Accomodation", path: "/accomodation" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -59,7 +58,7 @@ const Navbar: React.FC = () => {
         isScrolled ? "bg-white shadow-md" : "bg-transparent"
       } transition-all duration-300`}
     >
-      <nav className="max-w-site mx-auto px-6 py-1">
+      <nav className="max-w-site mx-auto px-0 py-2">
         <div className="flex justify-between items-center">
           {/* Mobile menu button */}
           <button
@@ -133,7 +132,7 @@ const Navbar: React.FC = () => {
               )
             )}
             <a
-              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 hover:text-conference-green hover:bg-pink-50`}
+              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border  bg-pink-50`}
               href="https://iopscience.iop.org/issue/1742-6596/2779/1"
             >
               ICMISI-2024(IOP)
@@ -206,10 +205,10 @@ const Navbar: React.FC = () => {
                 )
               )}
               <a
-                className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-20`}
-                onClick={closeMenu}
+                className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border  bg-pink-50`}
+                href="https://iopscience.iop.org/issue/1742-6596/2779/1"
               >
-                ICMISI - 2024(IOP)
+                ICMISI-2024(IOP)
               </a>
             </div>
           </div>

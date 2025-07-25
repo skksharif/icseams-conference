@@ -7,7 +7,7 @@ const AboutInstitute: React.FC = () => {
       icon: <Award className="w-8 h-8 text-pink-600" />,
       title: "Academic Excellence",
       description:
-        "BVRIT is known for its academic rigor and excellence in engineering education.",
+        "VITB is known for its academic rigor and excellence in engineering education.",
     },
     {
       icon: <BookOpen className="w-8 h-8 text-pink-600" />,
@@ -42,7 +42,7 @@ const AboutInstitute: React.FC = () => {
           <div data-aos="fade-right">
             <img
               src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="BVRIT Campus"
+              alt="VITB Campus"
               className="rounded-lg shadow-xl w-full h-[400px] object-cover"
             />
           </div>

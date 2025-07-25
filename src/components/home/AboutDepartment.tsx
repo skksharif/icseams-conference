@@ -14,7 +14,7 @@ const AboutDepartment: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Excellence in Mechanical Engineering Education and Research
+            Excellence in Civil Engineering Education and Research
           </p>
         </div>
 
@@ -22,7 +22,7 @@ const AboutDepartment: React.FC = () => {
           <p className="text-gray-700 max-w-5xl mx-auto mb-6">
             The Department of Civil Engineering pulls out all stops to create
             outstanding engineers - with advanced teaching techniques and
-            learning aids for undergraduate students. CIVILENGINEERING
+            learning aids for undergraduate students. CIVIL ENGINEERING
             DEPARTMENT of the institute started functioning right from the
             inception of the institute, in the year 2011. Students are not only
             made experts in technical aspects but also in interpersonal skills,

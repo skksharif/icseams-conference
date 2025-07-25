@@ -98,15 +98,13 @@ const ContactPage: React.FC = () => {
                       Address
                     </h3>
                     <p className="text-gray-800">
-                      Department of Mechanical Engineering
+                      Department of Civil Engineering
                       <br />
-                      B V Raju Institute of Technology (BVRIT)
+                      Vishnu Institute of Technology
                       <br />
-                      Vishnupur, Narsapur
+                      Bhimavaram,West Godavari District
                       <br />
-                      Medak District
-                      <br />
-                      Telangana - 502313
+                     Andhra Pradesh - 534202
                       <br />
                       India
                     </p>

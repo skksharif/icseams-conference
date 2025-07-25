@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
     <>
       <SEO 
         title="Home" 
-        description="1st International Conference on Sustainable Energy and Advanced Manufacturing Systems, 11th–13th September 2025, BVRIT, India" 
+        description="Materials Innovation and Sustainable Infrastructure (ICMISI-2025) is an international conference organized by the Civil Engineering department at Vishnu Institute of Technology, Bhimavaram. Join us on 11th & 12th December 2025 to explore advancements in sustainable infrastructure and materials innovation." 
         canonical="/"
       />
       <Hero />

@@ -145,8 +145,6 @@ const VenuePage: React.FC = () => {
               </div>
             </div>
           </div>
-
-     
         </div>
       </div>
     </>

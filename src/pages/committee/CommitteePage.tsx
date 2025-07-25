@@ -13,22 +13,22 @@ const CommitteePage: React.FC = () => {
     <>
       <SEO 
         title="Committee" 
-        description="Meet the Advisory, Technical, and Organizing Committees of ICSEAMS-2025." 
+        description="Meet the Advisory, Technical, and Organizing Committees of ICMISI-2025." 
         canonical="/committee"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4" >
             Conference Committees
           </h1>
-          <p className="max-w-3xl mx-auto text-lg opacity-90" data-aos="fade-up" data-aos-delay="200">
-            Meet the distinguished experts and organizers behind ICSEAMS-2025
+          <p className="max-w-3xl mx-auto text-lg opacity-90" >
+            Meet the distinguished experts and organizers behind ICMISI-2025
           </p>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-wrap justify-center gap-4 mb-8" data-aos="fade-up">
+        <div className="flex flex-wrap justify-center gap-4 mb-8" >
           {committees.map((committee) => (
             <NavLink
               key={committee.path}

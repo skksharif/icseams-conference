@@ -24,8 +24,6 @@ const Member: React.FC<MemberProps> = ({ name, role, type, delay = 0 }) => {
   return (
     <div
       className={`p-4 rounded-lg border ${getTypeClasses()} transition-all duration-300 hover:shadow-md`}
-      data-aos="fade-up"
-      data-aos-delay={delay}
     >
       <h3 className="font-semibold text-gray-800">{name}</h3>
       <p className="text-sm mt-1">{role}</p>
@@ -89,11 +87,11 @@ const OrganizingCommittee: React.FC = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 py-12">
       <div className="mb-8 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-gray-800 mb-2">
           Organizing Committee
         </h2>
-        <p className="text-gray-600" data-aos="fade-up" data-aos-delay="100">
-          Meet the team organizing ICSEAMS-2025 and ensuring a successful conference experience.
+        <p className="text-gray-600" >
+          Meet the team organizing ICMISI-2025 and ensuring a successful conference experience.
         </p>
       </div>
 
@@ -106,7 +104,7 @@ const OrganizingCommittee: React.FC = () => {
         { title: "Internal Advisory Committee", list: executiveCommittee, type: 'member' },
       ].map((section, idx) => (
         <div key={section.title} className="mb-10">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2" data-aos="fade-up">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">
             {section.title}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

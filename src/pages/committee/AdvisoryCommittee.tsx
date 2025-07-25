@@ -30,7 +30,7 @@ const InternationalAdvisoryCommittee: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h2
           className="text-3xl font-bold text-center text-conference-purple mb-6"
-          data-aos="fade-up"
+   
         >
           International Advisory Committee
         </h2>
@@ -40,8 +40,7 @@ const InternationalAdvisoryCommittee: React.FC = () => {
             <div
               key={index}
               className="bg-white rounded-lg p-4 border border-blue-200"
-              data-aos="fade-up"
-              data-aos-delay={index * 50}
+
             >
               <p className="text-gray-800 font-medium">{member}</p>
             </div>
