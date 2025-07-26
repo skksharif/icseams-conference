@@ -10,13 +10,13 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({ 
   title, 
-  description = "ICMISI-2025 is an international conference on Materials Innovation and Sustainable Infrastructure organized by the Civil Engineering department at Vishnu Institute of Technology, Bhimavaram.",
+  description = "ICMISI-2026 is an international conference on Materials Innovation and Sustainable Infrastructure organized by the Civil Engineering department at Vishnu Institute of Technology, Bhimavaram.",
   keywords = "ICMISI, Conference, Sustainable Energy, Advanced Manufacturing, VIT, Engineering Conference",
   canonical
 }) => {
   const siteTitle = title 
-    ? `${title} | ICMISI-2025` 
-    : "ICMISI-2025";
+    ? `${title} | ICMISI-2026` 
+    : "ICMISI-2026";
 
   return (
     <Helmet>

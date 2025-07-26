@@ -30,7 +30,6 @@ const DateItem: React.FC<DateItemProps> = ({
           ? "bg-red-50 border border-red-200"
           : "bg-white border border-gray-200 hover:border-conference-orange/30 hover:shadow-md"
       }`}
-
     >
       <div
         className={`p-2 rounded-full mr-4 ${
@@ -90,20 +89,16 @@ const ImportantDatesPage: React.FC = () => {
     <>
       <SEO
         title="Important Dates"
-        description="Key deadlines and important dates for ICMISI-2025, including submission deadlines, notification dates, and conference dates."
+        description="Key deadlines and important dates for ICMISI-2026, including submission deadlines, notification dates, and conference dates."
         canonical="/important-dates"
       />
       <div className="bg-gradient-to-r from-conference-green/90 to-conference-purple/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-          >
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Important Dates
           </h1>
-          <p
-            className="max-w-3xl mx-auto text-lg opacity-90"
-          >
-            Key deadlines and milestones for ICMISI-2025
+          <p className="max-w-3xl mx-auto text-lg opacity-90">
+            Key deadlines and milestones for ICMISI-2026
           </p>
         </div>
       </div>
@@ -113,43 +108,45 @@ const ImportantDatesPage: React.FC = () => {
           <div className="mb-8 text-center">
             <p className="text-gray-700">
               Please note all the following important dates related to
-              ICMISI-2025. Mark your calendars and ensure timely submissions to
+              ICMISI-2026. Mark your calendars and ensure timely submissions to
               avoid any last-minute complications.
             </p>
           </div>
 
           <div className="space-y-4 mb-12">
-
-
             <DateItem
-              title="Call for papers"
-              date="May 15, 2025"
-              delay={100}
+              title="Call for Papers Announcement"
+              date="August 1, 2025"
             />
-
 
             <DateItem
               title="Submission of full-length Paper"
-              date="July 31, 2025"
-              delay={200}
+              date="October 31, 2025"
             />
 
             <DateItem
-              title="Acceptance of full-length Paper"
-              date="September 12, 2025"
-              delay={200}
+              title="Notfication of Acceptance"
+              date="December 20, 2025"
             />
 
+            <DateItem
+              title="Camera Ready Paper Submission"
+              date="January 25, 2026"
+            />
 
             <DateItem
               title="End of registration"
-              date="November 12, 2025"
-              isUpcoming={true}
-              delay={300}
+              date="Febraury 10, 2026"
+              isCritical={true}
             />
 
-          </div>
+            <DateItem
+              title="Conference Dates"
+              date="April 1-2, 2026"
+              isUpcoming={true}
 
+            />
+          </div>
         </div>
       </div>
     </>

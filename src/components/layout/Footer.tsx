@@ -14,14 +14,14 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LightbulbIcon className="w-6 h-6 text-pink-400" />
-              <h2 className="text-xl font-bold">ICMISI-2025</h2>
+              <h2 className="text-xl font-bold">ICMISI-2026</h2>
             </div>
             <p className="text-gray-300 mb-4">
               International Conference on Materials Innovation and Sustainable Infrastructure
             </p>
             <div className="flex items-center gap-2 text-gray-300 mb-2">
               <Calendar size={16} />
-              <span>11th–12th December 2025</span>
+              <span>1st & 2nd April 2026</span>
             </div>
             <div className="flex items-start gap-2 text-gray-300">
               <MapPin size={16} className="mt-1 flex-shrink-0" />

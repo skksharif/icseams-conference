@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Contact the organizers of ICMISI-2025 for any queries related to the conference, paper submissions, registration, or sponsorship."
+        description="Contact the organizers of ICMISI-2026 for any queries related to the conference, paper submissions, registration, or sponsorship."
         canonical="/contact"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Get in touch with the ICMISI-2025 organizing team
+            Get in touch with the ICMISI-2026 organizing team
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                 Contact Information
               </h2>
               <p className="text-gray-700 mb-8">
-                If you have any questions about ICMISI-2025, please don't
+                If you have any questions about ICMISI-2026, please don't
                 hesitate to contact us. Our team is here to assist you with any
                 queries related to paper submissions, registration, venue, or
                 other conference matters.

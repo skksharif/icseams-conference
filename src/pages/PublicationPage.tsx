@@ -38,7 +38,7 @@ const PublicationPage: React.FC = () => {
     <>
       <SEO
         title="Publication"
-        description="Information about paper publication opportunities at ICMISI-2025, including indexed journals and conference proceedings."
+        description="Information about paper publication opportunities at ICMISI-2026, including indexed journals and conference proceedings."
         canonical="/publication"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-green/90 text-white py-10">

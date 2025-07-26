@@ -159,7 +159,7 @@ const CallForPapersPage: React.FC = () => {
     <>
       <SEO
         title="Call for Papers"
-        description="Submit your research papers to ICMISI-2025 on topics related to sustainable energy and advanced manufacturing systems."
+        description="Submit your research papers to ICMISI-2026 on topics related to sustainable energy and advanced manufacturing systems."
         canonical="/call-for-papers"
       />
       <div className="bg-gradient-to-r from-conference-green/90 to-conference-orange/90 text-white py-10">
@@ -175,7 +175,7 @@ const CallForPapersPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Submit your research contributions to ICMISI-2025
+            Submit your research contributions to ICMISI-2026
           </p>
         </div>
       </div>
@@ -187,7 +187,7 @@ const CallForPapersPage: React.FC = () => {
               Conference Tracks
             </h2>
             <p className="text-gray-700 mb-6">
-              ICMISI-2025 welcomes papers across a wide range of topics related
+              ICMISI-2026 welcomes papers across a wide range of topics related
               to sustainable energy and advanced manufacturing systems. Click on
               each track to view detailed topics:
             </p>

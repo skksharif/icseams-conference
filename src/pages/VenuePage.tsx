@@ -41,7 +41,7 @@ const VenuePage: React.FC = () => {
     <>
       <SEO
         title="Venue"
-        description="ICMISI-2025 will be held at Vishnu Institute of Technology (VIT), Bhimavaram, Andhra Pradesh, India from 11th–13th September 2025."
+        description="ICMISI-2026 will be held at Vishnu Institute of Technology (VIT), Bhimavaram, Andhra Pradesh, India from 1st & 2nd April 2026."
         canonical="/venue"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -73,7 +73,7 @@ const VenuePage: React.FC = () => {
                 </h2>
               </div>
               <p className="text-gray-700 mb-4">
-                ICMISI-2025 will be held at the beautiful campus of Vishnu Institute of Technology (VIT), located in Bhimavaram, Andhra Pradesh, India.
+                ICMISI-2026 will be held at the beautiful campus of Vishnu Institute of Technology (VIT), located in Bhimavaram, Andhra Pradesh, India.
               </p>
               <p className="text-gray-700 mb-4">
                 The venue provides modern conference facilities, comfortable accommodations, and a serene environment perfect for academic discussions and networking.

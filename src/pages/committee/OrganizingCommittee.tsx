@@ -91,7 +91,7 @@ const OrganizingCommittee: React.FC = () => {
           Organizing Committee
         </h2>
         <p className="text-gray-600" >
-          Meet the team organizing ICMISI-2025 and ensuring a successful conference experience.
+          Meet the team organizing ICMISI-2026 and ensuring a successful conference experience.
         </p>
       </div>
 

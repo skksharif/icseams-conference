@@ -165,7 +165,7 @@ const SpeakersPage: React.FC = () => {
     <>
       <SEO
         title="Speakers"
-        description="Meet the distinguished speakers of ICMISI-2025, including plenary and keynote speakers from around the world."
+        description="Meet the distinguished speakers of ICMISI-2026, including plenary and keynote speakers from around the world."
         canonical="/speakers"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-10">
@@ -183,7 +183,7 @@ const SpeakersPage: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8" data-aos="fade-up">
             <p className="text-gray-700 mb-6">
-              ICMISI-2025 will feature distinguished speakers from academia and industry, sharing insights on smart infrastructure, construction, and energy systems.
+              ICMISI-2026 will feature distinguished speakers from academia and industry, sharing insights on smart infrastructure, construction, and energy systems.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-purple text-white">

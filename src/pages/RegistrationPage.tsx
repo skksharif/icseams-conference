@@ -14,7 +14,7 @@ const RegistrationPage: React.FC = () => {
     <>
       <SEO
         title="Registration"
-        description="Register for ICMISI-2025. Early bird and regular registration fees for academicians, industry professionals, students, and attendees."
+        description="Register for ICMISI-2026. Early bird and regular registration fees for academicians, industry professionals, students, and attendees."
         canonical="/registration"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-green/90 text-white py-10">
@@ -30,7 +30,7 @@ const RegistrationPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Join us at ICMISI-2025 for an enriching experience
+            Join us at ICMISI-2026 for an enriching experience
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ const RegistrationPage: React.FC = () => {
               Registration Information
             </h2>
             <p className="text-gray-700 mb-6">
-              Registration for ICMISI-2025 includes access to all conference
+              Registration for ICMISI-2026 includes access to all conference
               sessions, conference materials, coffee breaks, lunches during the
               conference days, and a certificate of participation.
             </p>
@@ -65,10 +65,10 @@ const RegistrationPage: React.FC = () => {
                         Category
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        INDIA (Ends on: 05 AUG 2025)
+                        INDIA (Ends on: Febraury 10, 2026)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        FOREIGN (Ends on: 05 AUG 2025)
+                        FOREIGN (Ends on: February 10, 2026)
                       </th>
                     </tr>
                   </thead>
