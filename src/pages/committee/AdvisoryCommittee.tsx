@@ -10,7 +10,6 @@ const InternationalAdvisoryCommittee: React.FC = () => {
     "Kennedy Onyelowe, Michael Okpara University of Agriculture, Umudike, Nigeria",
     "Komali Kantamaneni, University of Central Lancashire, United Kingdom",
     "Krishna R. Reddy, University of Illinois at Chicago, USA",
-    "Neelamani S, Senior Research Scientist, Kuwait",
     "Nemkumar Banthia, University of British Columbia, Canada",
     "Raj Reddy Kallu, University of Nevada, USA",
     "Ramez M Hajj, Grainger College of Engineering, Illinois, USA",

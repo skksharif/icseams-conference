@@ -1,46 +1,256 @@
-import React from "react";
-import { Cog, Microscope, BookOpen, Users } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { Menu, X, ChevronDown } from "lucide-react";
 
-const AboutDepartment: React.FC = () => {
-  return (
-    <section className="py-8" id="about-department">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="section-title" data-aos="fade-up">
-            About Civil Engineering Department
-          </h2>
-          <p
-            className="section-subtitle"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Excellence in Civil Engineering Education and Research
-          </p>
-        </div>
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const location = useLocation();
 
-        <div className="mt-1" data-aos="fade-up">
-          <p className="text-gray-700 max-w-5xl mx-auto mb-6">
-            The Department of Civil Engineering pulls out all stops to create
-            outstanding engineers - with advanced teaching techniques and
-            learning aids for undergraduate students. CIVIL ENGINEERING
-            DEPARTMENT of the institute started functioning right from the
-            inception of the institute, in the year 2011. Students are not only
-            made experts in technical aspects but also in interpersonal skills,
-            a vital ingredient to excel in the fast-paced world. Students gain
-            practical experience from field visits to industries, dams and
-            irrigation structures, construction sites, etc. <br/>Our
-            teaching-learning process, involves industry experts and adjunct
-            faculties to enhance the student's knowledge and also targets to
-            bridge the gap that exists between academic curriculum and
-            industrial demands. Students are motivated to take up research
-            projects, to carry out regular industrial and field visits, to
-            present papers in academic conferences which will enable them to
-            excel in their selected career.
-          </p>
-        </div>
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    closeMenu();
+  }, [location.pathname]);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    {
+      name: "Committee",
+      path: "/committee",
+      dropdown: [
+        { name: "Advisory Committee", path: "/committee/advisory" },
+        { name: "Technical Committee", path: "/committee/technical" },
+        { name: "Organizing Committee", path: "/committee/organizing" },
+      ],
+      isDownload: false,
+    },
+    { name: "CFP", path: "/call-for-papers" },
+    { name: "Publication", path: "/publication" },
+    { name: "Speakers", path: "/speakers" },
+    { name: "Registration", path: "/registration" },
+    { name: "Imp Dates", path: "/important-dates" },
+    { name: "Sponsors", path: "/sponsors" },
+    { name: "Venue", path: "/venue" },
+    { name: "Accomodation", path: "/accomodation" },
+    { name: "Contact", path: "/contact" },
+    {
+      name: "Brouchers",
+      path: "/brouchers",
+      dropdown: [
+        {
+          name: "Sponsors Brouchers",
+          path: "/downloads/sponsors_broucher.pdf",
+        },
+        {
+          name: "XYZ Broucher",
+          path: "/downloads/xyz-broucher.pdf",
+        },
+      ],
+      isDownload: true,
+    },
+  ];
+
+  const renderDropdown = (link: any) => (
+    <div className="absolute left-0 mt-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 animate-fade-in">
+      <div className="py-1">
+        {link.dropdown.map((item: any) =>
+          link.isDownload ? (
+            <a
+              key={item.path}
+              href={item.path}
+              download
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-conference-green"
+            >
+              {item.name}
+            </a>
+          ) : (
+            <NavLink
+              key={item.path}
+              to={item.path}
+              className={({ isActive }) =>
+                `block px-4 py-2 text-sm ${
+                  isActive
+                    ? "bg-pink-50 text-conference-green font-bold"
+                    : "text-gray-700 hover:bg-pink-50 hover:text-conference-green"
+                }`
+              }
+            >
+              {item.name}
+            </NavLink>
+          )
+        )}
       </div>
-    </section>
+    </div>
+  );
+
+  return (
+    <header
+      className={`sticky top-0 z-50 w-full ${
+        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      } transition-all duration-300`}
+    >
+      <nav className="max-w-site mx-auto px-0 py-2">
+        <div className="flex justify-between items-center">
+          {/* Mobile menu toggle */}
+          <button
+            className="lg:hidden text-gray-700 hover:text-conference-green"
+            onClick={toggleMenu}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-1">
+            {navLinks.map((link) =>
+              !link.dropdown ? (
+                <NavLink
+                  key={link.path}
+                  to={link.path}
+                  className={({ isActive }) =>
+                    `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
+                      isActive
+                        ? "text-conference-green"
+                        : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
+                    }`
+                  }
+                >
+                  {link.name}
+                </NavLink>
+              ) : (
+                <div
+                  key={link.name}
+                  className="relative"
+                  onMouseEnter={() => setOpenDropdown(link.name)}
+                  onMouseLeave={() => setOpenDropdown(null)}
+                >
+                  <button
+                    className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center ${
+                      location.pathname.includes(link.path)
+                        ? "text-conference-green"
+                        : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
+                    }`}
+                  >
+                    {link.name}
+                    <ChevronDown size={16} className="ml-1" />
+                  </button>
+                  {openDropdown === link.name && renderDropdown(link)}
+                </div>
+              )
+            )}
+            <a
+              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border bg-pink-50`}
+              href="https://iopscience.iop.org/issue/1742-6596/2779/1"
+            >
+              ICMISI-2024(IOP)
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="lg:hidden mt-4 bg-white rounded-lg shadow-xl p-4 animate-fade-in">
+            <div className="flex flex-col space-y-2">
+              {navLinks.map((link) =>
+                !link.dropdown ? (
+                  <NavLink
+                    key={link.path}
+                    to={link.path}
+                    className={({ isActive }) =>
+                      `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
+                        isActive
+                          ? "bg-pink-50 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
+                      }`
+                    }
+                    onClick={closeMenu}
+                  >
+                    {link.name}
+                  </NavLink>
+                ) : (
+                  <div key={link.name} className="flex flex-col">
+                    <button
+                      onClick={() =>
+                        setOpenDropdown(
+                          openDropdown === link.name ? null : link.name
+                        )
+                      }
+                      className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
+                        location.pathname.includes(link.path)
+                          ? "bg-pink-50 text-conference-green"
+                          : "text-gray-700 hover:text-conference-green hover:bg-pink-50"
+                      }`}
+                    >
+                      {link.name}
+                      <ChevronDown
+                        size={16}
+                        className={`ml-1 transition-transform duration-200 ${
+                          openDropdown === link.name ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {openDropdown === link.name && (
+                      <div className="ml-4 mt-1 border-l-2 border-pink-200 pl-4 animate-fade-in">
+                        {link.dropdown.map((item: any) =>
+                          link.isDownload ? (
+                            <a
+                              key={item.path}
+                              href={item.path}
+                              download
+                              className="block px-3 py-2 text-sm text-gray-700 hover:text-conference-green"
+                              onClick={closeMenu}
+                            >
+                              {item.name}
+                            </a>
+                          ) : (
+                            <NavLink
+                              key={item.path}
+                              to={item.path}
+                              className={({ isActive }) =>
+                                `block px-3 py-2 text-sm ${
+                                  isActive
+                                    ? "text-conference-green font-bold"
+                                    : "text-gray-700 hover:text-conference-green"
+                                }`
+                              }
+                              onClick={closeMenu}
+                            >
+                              {item.name}
+                            </NavLink>
+                          )
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )
+              )}
+              <a
+                className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border bg-pink-50`}
+                href="https://iopscience.iop.org/issue/1742-6596/2779/1"
+              >
+                ICMISI-2024(IOP)
+              </a>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
   );
 };
 
-export default AboutDepartment;
+export default Navbar;

@@ -52,6 +52,11 @@ const OrganizingCommittee: React.FC = () => {
     { name: "Kunamineni Vijay", role: "Organizing Chair, Head, Civil Engg., VITB, INDIA" },
   ];
 
+  const orgChairs = [
+    { name: "Kunamineni Vijay", role: "Conference Chair, Director, IIT Patna, INDIA" },
+    { name: "V V S Sharma", role: "Conference Chair, University of Illinois, Chicago, USA" },
+  ]
+
   const secretaries = [
     { name: "V S J Yeswanth Paluri", role: "Organizing Secretary, Assoc. Prof., Dept. of CE, VIT-Bhimavaram" },
     { name: "Sk Subhan Alisha", role: "Organizing Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram" },
@@ -61,7 +66,6 @@ const OrganizingCommittee: React.FC = () => {
   ];
 
   const coreCommittee = [
-    { name: "VVS Sarma", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "P. Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "K S. Saikumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "M. Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
@@ -98,7 +102,8 @@ const OrganizingCommittee: React.FC = () => {
       {[
         { title: "Chief Patrons", list: chiefPatrons, type: 'chief' },
         { title: "Chief Co-Patrons", list: coPatrons, type: 'chief' },
-        { title: "Conference Chairs & Technical Committee", list: chairs, type: 'chair' },
+        { title: "Conference Chairs ", list: chairs, type: 'chair' },
+        { title: "Organizing Chairs", list: orgChairs, type: 'chair' },
         { title: "Secretaries", list: secretaries, type: 'secretary' },
         { title: "Organizing Committee Members", list: coreCommittee, type: 'member' },
         { title: "Internal Advisory Committee", list: executiveCommittee, type: 'member' },

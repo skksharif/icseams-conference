@@ -121,7 +121,7 @@ const NearbyPlacesPage: React.FC = () => {
       type: "hotel" as const,
     },
     {
-      name: "BVRIT Guest House",
+      name: "VITB Guest House",
       description:
         "On-campus accommodation with basic amenities for conference attendees.",
       distance: "0.5 km",
@@ -183,7 +183,7 @@ const NearbyPlacesPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Explore attractions, accommodations, and dining options around BVRIT
+            Explore attractions, accommodations, and dining options around VITB
           </p>
         </div>
       </div>

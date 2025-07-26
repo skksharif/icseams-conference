@@ -288,7 +288,7 @@ const SponsorsPage: React.FC = () => {
                 For detailed information about sponsorship packages and benefits, please contact:
               </p>
               <a 
-                href="mailto:ICMISI.sponsors@bvrit.ac.in" 
+                href="mailto:ICMISI.sponsors@VITB.ac.in" 
                 className="btn-primary inline-flex items-center"
               >
                 <Mail size={16} className="mr-2" />

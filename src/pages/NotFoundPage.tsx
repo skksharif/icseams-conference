@@ -28,8 +28,8 @@ const NotFoundPage: React.FC = () => {
           </Link>
           <div className="mt-8 text-gray-500 text-sm">
             <p>If you believe this is an error, please contact us at:</p>
-            <a href="mailto:ICMISI@bvrit.ac.in" className="text-conference-orange hover:underline">
-              ICMISI@bvrit.ac.in
+            <a href="mailto:ICMISI@VITB.ac.in" className="text-conference-orange hover:underline">
+              ICMISI@VITB.ac.in
             </a>
           </div>
         </div>

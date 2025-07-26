@@ -142,14 +142,24 @@ const CallForPapersPage: React.FC = () => {
         "3D-Printing",
       ],
     },
+    {
+      title: "Architecture and Building Engineering",
+      topics: [
+        "Architectural Planning, Design and History",
+        "Architectural Environment",
+        "Regional Environment",
+        "Global Environment",
+        "Urban Planning",
+        "Building Construction and Structures",
+        "Maintenance and Management",
+        "Energy Conservation",
+        "Material Recycling",
+        "Disaster Prevention and Universal Design",
+      ],
+    },
   ];
 
-  const cardColors = [
-    "bg-conference-orange/10 border-conference-orange",
-    "bg-conference-purple/10 border-conference-purple",
-    "bg-conference-green/10 border-conference-green",
-    "bg-blue-100 border-blue-400",
-  ];
+  const cardColors = ["bg-conference-orange/10 border-conference-orange"];
 
   const toggleTrack = (index: number) => {
     setOpenTrack(openTrack === index ? null : index);

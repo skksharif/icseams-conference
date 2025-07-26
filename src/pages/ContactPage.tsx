@@ -60,10 +60,10 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <a
-                      href="mailto:ICMISI@bvrit.ac.in"
+                      href="mailto:ICMISI@VITB.ac.in"
                       className="text-conference-orange hover:underline"
                     >
-                      ICMISI@bvrit.ac.in
+                      ICMISI@VITB.ac.in
                     </a>
                     <p className="text-gray-600 text-sm mt-1">
                       For general inquiries
@@ -241,10 +241,10 @@ const ContactPage: React.FC = () => {
                   publication:
                 </p>
                 <a
-                  href="mailto:ICMISI.papers@bvrit.ac.in"
+                  href="mailto:ICMISI.papers@VITB.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.papers@bvrit.ac.in
+                  ICMISI.papers@VITB.ac.in
                 </a>
               </div>
 
@@ -256,10 +256,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to conference registration or payment:
                 </p>
                 <a
-                  href="mailto:ICMISI.registration@bvrit.ac.in"
+                  href="mailto:ICMISI.registration@VITB.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.registration@bvrit.ac.in
+                  ICMISI.registration@VITB.ac.in
                 </a>
               </div>
 
@@ -271,10 +271,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to sponsorship opportunities:
                 </p>
                 <a
-                  href="mailto:ICMISI.sponsors@bvrit.ac.in"
+                  href="mailto:ICMISI.sponsors@VITB.ac.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.sponsors@bvrit.ac.in
+                  ICMISI.sponsors@VITB.ac.in
                 </a>
               </div>
             </div>

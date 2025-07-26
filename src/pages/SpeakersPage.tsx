@@ -39,8 +39,6 @@ const Speaker: React.FC<SpeakerProps> = ({
   return (
     <div
       className="card card-hover overflow-hidden"
-      data-aos="fade-up"
-      data-aos-delay={delay}
     >
       <div className="relative h-56 mb-4 overflow-hidden rounded-t-lg -mx-6 -mt-6 bg-gray-200 flex items-center justify-center text-gray-600 text-sm">
         {image ? (
@@ -63,7 +61,9 @@ const Speaker: React.FC<SpeakerProps> = ({
         <p className="text-conference-purple font-medium mb-2">{role}</p>
         <div className="flex items-center text-gray-600 mb-3">
           <MapPin size={16} className="mr-1" />
-          <span>{affiliation}, {country}</span>
+          <span>
+            {affiliation}, {country}
+          </span>
         </div>
         {bio && <p className="text-gray-700 text-sm mb-4 flex-grow">{bio}</p>}
         {website && (
@@ -85,6 +85,18 @@ const Speaker: React.FC<SpeakerProps> = ({
 const SpeakersPage: React.FC = () => {
   const plenaryPLACEHOLDER = [
     {
+      name: "Prof. Shuichi Tori",
+      role: "Assistant Director and Professor",
+      affiliation: "Kumamoto University",
+      country: " Japan",
+    },
+    {
+      name: "Edy Tonnizam Mohamad",
+      role: "",
+      affiliation: "Universiti Teknologi Malaysia",
+      country: "Malaysia",
+    },
+    {
       name: "Trilok Nath Singh",
       role: "Director",
       affiliation: "Indian Institute of Technology Patna",
@@ -95,18 +107,6 @@ const SpeakersPage: React.FC = () => {
       role: "",
       affiliation: "Universiti Teknologi MARA (UiTM)",
       country: "Malaysia",
-    },
-    {
-      name: "Edy Tonnizam Mohamad",
-      role: "",
-      affiliation: "Universiti Teknologi Malaysia",
-      country: "Malaysia",
-    },
-    {
-      name: "Kalirajan S",
-      role: "Executive Vice President & Head - Nuclear & Defence",
-      affiliation: "Tata Projects",
-      country: "India",
     },
   ];
 
@@ -123,12 +123,7 @@ const SpeakersPage: React.FC = () => {
       affiliation: "Alliance Concrete Singapore Pte Ltd",
       country: "Singapore",
     },
-    {
-      name: "Neelima Satyam",
-      role: "",
-      affiliation: "IIT Indore",
-      country: "India",
-    },
+
     {
       name: "Heeralal Mudavath",
       role: "",
@@ -150,7 +145,7 @@ const SpeakersPage: React.FC = () => {
     {
       name: "Madhavi Latha G",
       role: "",
-      affiliation: "IIT Madras",
+      affiliation: " IISC Banglore",
       country: "India",
     },
     {
@@ -170,20 +165,28 @@ const SpeakersPage: React.FC = () => {
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
+          <h1
+            className="text-3xl md:text-4xl font-bold mb-4"
+          >
             Conference Speakers
           </h1>
-          <p className="max-w-3xl mx-auto text-lg opacity-90" data-aos="fade-up" data-aos-delay="200">
-            Distinguished experts in sustainable energy, infrastructure, and smart systems
+          <p
+            className="max-w-3xl mx-auto text-lg opacity-90"
+            
+          >
+            Distinguished experts in sustainable energy, infrastructure, and
+            smart systems
           </p>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8" data-aos="fade-up">
+          <div className="text-center mb-8" >
             <p className="text-gray-700 mb-6">
-              ICMISI-2026 will feature distinguished speakers from academia and industry, sharing insights on smart infrastructure, construction, and energy systems.
+              ICMISI-2026 will feature distinguished speakers from academia and
+              industry, sharing insights on smart infrastructure, construction,
+              and energy systems.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-purple text-white">
@@ -196,7 +199,9 @@ const SpeakersPage: React.FC = () => {
           </div>
 
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">
+            <h2
+              className="text-2xl font-bold text-gray-800 mb-8 text-center"
+            >
               Plenary Speakers
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -208,14 +213,16 @@ const SpeakersPage: React.FC = () => {
                   affiliation={speaker.affiliation}
                   country={speaker.country}
                   type="plenary"
-                  delay={index * 100}
                 />
               ))}
             </div>
           </div>
 
           <div className="mb-16">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">
+            <h2
+              className="text-2xl font-bold text-gray-800 mb-8 text-center"
+              
+            >
               Keynote Speakers
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -227,7 +234,6 @@ const SpeakersPage: React.FC = () => {
                   affiliation={speaker.affiliation}
                   country={speaker.country}
                   type="keynote"
-                  delay={index * 100}
                 />
               ))}
             </div>
