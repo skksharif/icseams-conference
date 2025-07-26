@@ -77,12 +77,12 @@ const Hero: React.FC = () => {
             >
               <div className="flex items-center gap-2">
                 <Calendar size={18} className="text-conference-orange" />
-                <span>11th–13th September 2025</span>
+                <span>1st - 2nd April 2026</span>
               </div>
               <div className="hidden sm:block bg-white w-1 h-1 rounded-full" />
               <div className="flex items-center gap-2">
                 <MapPin size={18} className="text-conference-orange" />
-                <span>BVRIT, Narsapur, Telangana, India</span>
+                <span>VITB, Bhimavaram, Andhra Pradesh, India</span>
               </div>
             </div>
             <div
