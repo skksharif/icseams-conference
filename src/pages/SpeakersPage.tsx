@@ -37,9 +37,7 @@ const Speaker: React.FC<SpeakerProps> = ({
   };
 
   return (
-    <div
-      className="card card-hover overflow-hidden"
-    >
+    <div className="card card-hover overflow-hidden">
       <div className="relative h-56 mb-4 overflow-hidden rounded-t-lg -mx-6 -mt-6 bg-gray-200 flex items-center justify-center text-gray-600 text-sm">
         {image ? (
           <img
@@ -165,15 +163,10 @@ const SpeakersPage: React.FC = () => {
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-          >
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Conference Speakers
           </h1>
-          <p
-            className="max-w-3xl mx-auto text-lg opacity-90"
-            
-          >
+          <p className="max-w-3xl mx-auto text-lg opacity-90">
             Distinguished experts in sustainable energy, infrastructure, and
             smart systems
           </p>
@@ -182,25 +175,41 @@ const SpeakersPage: React.FC = () => {
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8" >
+          <div className="text-center mb-8">
             <p className="text-gray-700 mb-6">
               ICMISI-2026 will feature distinguished speakers from academia and
               industry, sharing insights on smart infrastructure, construction,
               and energy systems.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-purple text-white">
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("plenary-speakers")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-purple text-white cursor-pointer"
+              >
                 <Award size={14} className="mr-1" /> Plenary Speakers
-              </span>
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-orange text-white">
+              </button>
+
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("keynote-speakers")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-orange text-white cursor-pointer"
+              >
                 <Award size={14} className="mr-1" /> Keynote Speakers
-              </span>
+              </button>
             </div>
           </div>
 
           <div className="mb-16">
             <h2
               className="text-2xl font-bold text-gray-800 mb-8 text-center"
+              id="plenary-speakers"
             >
               Plenary Speakers
             </h2>
@@ -221,7 +230,7 @@ const SpeakersPage: React.FC = () => {
           <div className="mb-16">
             <h2
               className="text-2xl font-bold text-gray-800 mb-8 text-center"
-              
+              id="keynote-speakers"
             >
               Keynote Speakers
             </h2>

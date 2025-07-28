@@ -21,7 +21,7 @@ const AboutDepartment: React.FC = () => {
 
         {/* Description */}
         <div data-aos="fade-up">
-          <p className="text-gray-700 max-w-5xl mx-auto leading-relaxed text-justify">
+          <p className="text-gray-700 max-w-5xl mx-auto leading-relaxed text-justify ">
             The Department of Civil Engineering pulls out all stops to create
             outstanding engineers – with advanced teaching techniques and
             learning aids for undergraduate students. The department started

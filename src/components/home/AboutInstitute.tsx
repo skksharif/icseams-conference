@@ -50,13 +50,13 @@ const AboutInstitute: React.FC = () => {
             <h3 className="text-2xl font-bold text-gray-800 mb-4">
               A Premier Engineering Institution
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               Vishnu Institute of Technology was established in 2008 by Sri
               Vishnu Educational Society (SVES), a leading educational trust to
               promote quality education, under the aegis of eminent
               philanthropist Padma Bhushan Dr. B.V. Raju (Late).
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               he institute is approved by AICTE and is permanently affiliated to
               JNTUK, Kakinada. Over a decade, this institute has witnessed
               significant growth and stands out as one of the best engineering
@@ -64,7 +64,7 @@ const AboutInstitute: React.FC = () => {
               'A++' grade (3.51/4) with its validity up to 2024. The institute
               has attained autonomous status for 10 years from the year 2019.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
               Indian Merchant's Chamber (IMC) recognized the services of VITB
               with its Ramakrishna Bajaj National Quality award in education
               sector (2010, 2011, 2017) and Asia Pacific Quality Organization

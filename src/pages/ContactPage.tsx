@@ -45,7 +45,7 @@ const ContactPage: React.FC = () => {
               <h2 className="text-2xl font-bold text-gray-800 mb-6">
                 Contact Information
               </h2>
-              <p className="text-gray-700 mb-8">
+              <p className="text-gray-700 mb-8 text-justify">
                 If you have any questions about ICMISI-2026, please don't
                 hesitate to contact us. Our team is here to assist you with any
                 queries related to paper submissions, registration, venue, or

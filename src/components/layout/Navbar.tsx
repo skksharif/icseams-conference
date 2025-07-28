@@ -52,18 +52,22 @@ const Navbar: React.FC = () => {
       path: "/brouchers",
       dropdown: [
         {
+          name: "Conference Broucher",
+          path: "/downloads/conference_broucher.pdf",
+        },
+        {
           name: "Sponsors Brouchers",
           path: "/downloads/sponsership_broucher.pdf",
         },
         {
-          name: "XYZ Broucher",
-          path: "/downloads/xyz_broucher.pdf",
+          name: "Full Paper Template",
+          path: "/downloads/full_paper_template.docm",
         },
       ],
       isDownload: true,
     },
     {
-      name: "Past Conf",
+      name: "Past Conference",
       path: "/past-conference",
       dropdown: [
         {
@@ -176,12 +180,7 @@ const Navbar: React.FC = () => {
                 </div>
               )
             )}
-            <a
-              className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border bg-pink-50`}
-              href="https://iopscience.iop.org/issue/1742-6596/2779/1"
-            >
-              ICMISI-2024(IOP)
-            </a>
+
           </div>
         </div>
 
@@ -262,12 +261,7 @@ const Navbar: React.FC = () => {
                   </div>
                 )
               )}
-              <a
-                className={`px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center cursor-pointer text-gray-700 border bg-pink-50`}
-                href="https://iopscience.iop.org/issue/1742-6596/2779/1"
-              >
-                ICMISI-2024(IOP)
-              </a>
+            
             </div>
           </div>
         )}

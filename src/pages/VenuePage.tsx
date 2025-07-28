@@ -72,10 +72,10 @@ const VenuePage: React.FC = () => {
                   Venue Location
                 </h2>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 ICMISI-2026 will be held at the beautiful campus of Vishnu Institute of Technology (VIT), located in Bhimavaram, Andhra Pradesh, India.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 The venue provides modern conference facilities, comfortable accommodations, and a serene environment perfect for academic discussions and networking.
               </p>
               <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
@@ -121,23 +121,23 @@ const VenuePage: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">By Air</h4>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4 text-justify">
                       The nearest airport is Rajahmundry Airport (RJA) which is about 85 km away. Alternatively, Vijayawada Airport (VGA) is around 120 km from the venue. Taxis and cab services are available.
                     </p>
 
                     <h4 className="font-semibold text-gray-800 mb-2">By Train</h4>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 text-justify">
                       Bhimavaram Town and Bhimavaram Junction are the nearest railway stations. Local transport and autos are easily available to reach the campus.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">By Road</h4>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4 text-justify">
                       Vishnu Institute of Technology is well-connected by road. It is accessible from all major cities in Andhra Pradesh.
                     </p>
 
                     <h4 className="font-semibold text-gray-800 mb-2">Local Transportation</h4>
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 text-justify">
                       Auto-rickshaws and taxis are available for local transport within Bhimavaram. Shuttle services may be arranged for conference guests.
                     </p>
                   </div>
