@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               <h2 className="text-xl font-bold">ICMISI-2026</h2>
             </div>
             <p className="text-gray-300 mb-4">
-              International Conference on Materials Innovation and Sustainable
+              2nd International Conference on Materials Innovation and Sustainable
               Infrastructure
             </p>
             <div className="flex items-center gap-2 text-gray-300 mb-2">

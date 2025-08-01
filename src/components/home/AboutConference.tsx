@@ -24,7 +24,7 @@ const AboutConference: React.FC = () => {
           <div className="order-2 lg:order-1" data-aos="fade-right">
             <p className="text-gray-700 mb-4 text-justify">
               Civil Engineering department at Vishnu Institute of
-              Technology-Bhimavaram is organizing International Conference on
+              Technology-Bhimavaram is organizing 2nd International Conference on
               Materials Innovation and Sustainable Infrastructure (ICMISI 2026)
               on 1st & 2nd April 2026. Sustainable infrastructure is crucial for
               mitigating environmental challenges, such as climate change,

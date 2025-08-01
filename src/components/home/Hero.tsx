@@ -7,31 +7,31 @@ const slides = [
     image: "/slides/s0.png",
     title: "ICMISI 2026",
     subtitle:
-      "International Conference on Materials Innovation and Sustainable Infrastructure",
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
   {
     image: "/slides/s1.png",
     title: "ICMISI 2026",
     subtitle:
-      "International Conference on Materials Innovation and Sustainable Infrastructure",
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
   {
     image: "/slides/s2.png",
     title: "ICMISI 2026",
     subtitle:
-      "International Conference on Materials Innovation and Sustainable Infrastructure",
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
   {
     image: "/slides/s4.png",
     title: "ICMISI 2026",
     subtitle:
-      "International Conference on Materials Innovation and Sustainable Infrastructure",
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
   {
     image: "/slides/s3.png",
     title: "ICMISI 2026",
     subtitle:
-      "International Conference on Materials Innovation and Sustainable Infrastructure",
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
 ];
 
