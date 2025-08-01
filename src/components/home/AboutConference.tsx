@@ -15,8 +15,8 @@ const AboutConference: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Exploring innovations in sustainable energy and advanced
-            manufacturing systems
+            Exploring Innovations in Materials and Technologies for
+            Sustainable Infrastructure
           </p>
         </div>
 
@@ -26,9 +26,9 @@ const AboutConference: React.FC = () => {
               Civil Engineering department at Vishnu Institute of
               Technology-Bhimavaram is organizing International Conference on
               Materials Innovation and Sustainable Infrastructure (ICMISI 2026)
-              on 1st & 2nd April 2026. Sustainable infrastructure is
-              crucial for mitigating environmental challenges, such as climate
-              change, resource depletion, and pollution.
+              on 1st & 2nd April 2026. Sustainable infrastructure is crucial for
+              mitigating environmental challenges, such as climate change,
+              resource depletion, and pollution.
             </p>
             <p className="text-gray-700 mb-4 text-justify">
               The conference explores how materials innovation and emerging
@@ -70,11 +70,10 @@ const AboutConference: React.FC = () => {
                 height="400px"
                 src="https://www.youtube.com/embed/nAumUVsxwtc?si=VsHUys6rkjYqw5Ef"
                 title="YouTube video player"
-    
               ></iframe>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
                 <div className="text-conference-purple font-bold text-xl">
-                 1st - 2nd
+                  1st - 2nd
                 </div>
                 <div className="text-gray-700">April 2026</div>
               </div>

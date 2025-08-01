@@ -43,7 +43,7 @@ const Speaker: React.FC<SpeakerProps> = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-500 hover:scale-105"
           />
         ) : (
           "No Image Available"
@@ -86,71 +86,81 @@ const SpeakersPage: React.FC = () => {
       name: "Prof. Shuichi Tori",
       role: "Assistant Director and Professor",
       affiliation: "Kumamoto University",
-      country: " Japan",
+      country: "Japan",
+      image: "/speakers/1.jpg", // add image path
     },
     {
       name: "Edy Tonnizam Mohamad",
-      role: "",
+      role: "Professor",
       affiliation: "Universiti Teknologi Malaysia",
       country: "Malaysia",
+      image: "/speakers/2.png",
     },
     {
       name: "Trilok Nath Singh",
       role: "Director",
       affiliation: "Indian Institute of Technology Patna",
       country: "India",
+      image: "/speakers/3.jpg",
     },
     {
       name: "Deepak T J",
-      role: "",
+      role: "Professor",
       affiliation: "Universiti Teknologi MARA (UiTM)",
       country: "Malaysia",
+      image: "/speakers/4.jpg",
     },
   ];
 
   const keynotePLACEHOLDER = [
     {
       name: "K Ganesh Babu",
-      role: "",
+      role: "Professor",
       affiliation: "IIT Madras",
       country: "India",
+      image: "/speakers/5.jpg",
     },
     {
       name: "Daneti Saradhi Babu",
-      role: "",
+      role: "Director",
       affiliation: "Alliance Concrete Singapore Pte Ltd",
       country: "Singapore",
+      image: "/speakers/6.png",
     },
-
     {
       name: "Heeralal Mudavath",
-      role: "",
+      role: "Professor",
       affiliation: "NIT Warangal",
       country: "India",
+      image: "/speakers/7.jpg",
     },
     {
       name: "Rakesh J Pillai",
-      role: "",
+      role: "Professor",
       affiliation: "IIT Palakkad",
       country: "India",
+      image: "/speakers/8.jpg",
     },
     {
       name: "Meena Murmu",
-      role: "",
+      role: "Professor",
       affiliation: "NIT Raipur",
       country: "India",
+      image: "/speakers/9.jpg",
     },
     {
       name: "Madhavi Latha G",
-      role: "",
-      affiliation: " IISC Banglore",
+      role: "Professor",
+      affiliation: "IISC Bangalore",
       country: "India",
+      image: "/speakers/10.jpg",
     },
     {
       name: "Venkata Dilip Kumar Pasupuleti",
-      role: "",
+      role: "Professor",
       affiliation: "Mahindra University",
       country: "India",
+      image: "/speakers/11.webp",
     },
   ];
 
@@ -167,8 +177,8 @@ const SpeakersPage: React.FC = () => {
             Conference Speakers
           </h1>
           <p className="max-w-3xl mx-auto text-lg opacity-90">
-            Distinguished experts in sustainable energy, infrastructure, and
-            smart systems
+            Distinguished experts in materials, sustainable infrastructure,
+            smart technologies, and resilient urban development
           </p>
         </div>
       </div>
@@ -177,9 +187,9 @@ const SpeakersPage: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8">
             <p className="text-gray-700 mb-6">
-              ICMISI-2026 will feature distinguished speakers from academia and
-              industry, sharing insights on smart infrastructure, construction,
-              and energy systems.
+              ICMISI-2026 will host distinguished speakers from academia and
+              industry, offering insights into materials innovation, sustainable
+              construction, smart infrastructure, and energy-efficient systems.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
               <button
@@ -216,6 +226,7 @@ const SpeakersPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {plenaryPLACEHOLDER.map((speaker, index) => (
                 <Speaker
+                  image={speaker.image}
                   key={speaker.name}
                   name={speaker.name}
                   role={speaker.role}
@@ -242,6 +253,7 @@ const SpeakersPage: React.FC = () => {
                   role={speaker.role}
                   affiliation={speaker.affiliation}
                   country={speaker.country}
+                  image={speaker.image}
                   type="keynote"
                 />
               ))}

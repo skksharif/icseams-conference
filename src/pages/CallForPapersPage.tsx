@@ -197,9 +197,10 @@ const CallForPapersPage: React.FC = () => {
               Conference Tracks
             </h2>
             <p className="text-gray-700 mb-6">
-              ICMISI-2026 welcomes papers across a wide range of topics related
-              to sustainable energy and advanced manufacturing systems. Click on
-              each track to view detailed topics:
+              ICMISI-2026 invites high-quality papers on innovations in
+              materials, sustainable infrastructure, smart cities, advanced
+              construction, environmental systems, and next-gen manufacturing.
+              Explore the thematic tracks below for detailed topics:
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

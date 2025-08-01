@@ -110,19 +110,8 @@ const Footer: React.FC = () => {
                 </div>
               </div>
 
-              {/* College Email */}
-              <div className="flex items-start gap-2">
-                <Mail size={16} className="mt-1 flex-shrink-0" />
-                <span>
-                  <strong>College:</strong>{" "}
-                  <a
-                    href="mailto:info@vishnu.edu.in"
-                    className="hover:text-conference-orange transition-colors"
-                  >
-                    info@vishnu.edu.in
-                  </a>
-                </span>
-              </div>
+      
+        
 
               {/* College Address */}
               <div className="flex items-start gap-2">
