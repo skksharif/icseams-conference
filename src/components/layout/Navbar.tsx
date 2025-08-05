@@ -72,12 +72,8 @@ const Navbar: React.FC = () => {
       dropdown: [
         {
           name: "2024 Conference",
-          path: "https://iopscience.iop.org/issue/1742-6596/2779/1",
-        },
-        {
-          name: "2023 Conference",
-          path: "https://iopscience.iop.org/issue/1742-6596/2779/1",
-        },
+          path: "https://www.vishnu.edu.in/MISI/ICMISI2024.php",
+        }
       ],
       isDownload: false,
     },

@@ -24,9 +24,9 @@ const AboutConference: React.FC = () => {
           <div className="order-2 lg:order-1" data-aos="fade-right">
             <p className="text-gray-700 mb-4 text-justify">
               Civil Engineering department at Vishnu Institute of
-              Technology-Bhimavaram is organizing 2nd International Conference on
+              Technology-Bhimavaram is organizing  2<sup>nd</sup> International Conference on
               Materials Innovation and Sustainable Infrastructure (ICMISI 2026)
-              on 1st & 2nd April 2026. Sustainable infrastructure is crucial for
+              on 1<sup>st</sup> & 2<sup>nd</sup> April 2026. Sustainable infrastructure is crucial for
               mitigating environmental challenges, such as climate change,
               resource depletion, and pollution.
             </p>
@@ -73,7 +73,7 @@ const AboutConference: React.FC = () => {
               ></iframe>
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
                 <div className="text-conference-purple font-bold text-xl">
-                  1st - 2nd
+                  1<sup>st</sup> - 2<sup>nd</sup>
                 </div>
                 <div className="text-gray-700">April 2026</div>
               </div>

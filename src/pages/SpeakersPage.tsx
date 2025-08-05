@@ -134,6 +134,13 @@ const SpeakersPage: React.FC = () => {
       country: "India",
       image: "/speakers/7.jpg",
     },
+        {
+      name: "Madhavi Latha G",
+      role: "Professor",
+      affiliation: "IISC Bangalore",
+      country: "India",
+      image: "/speakers/10.jpg",
+    },
     {
       name: "Rakesh J Pillai",
       role: "Professor",
@@ -143,18 +150,12 @@ const SpeakersPage: React.FC = () => {
     },
     {
       name: "Meena Murmu",
-      role: "Professor",
+      role: "Associate Professor",
       affiliation: "NIT Raipur",
       country: "India",
       image: "/speakers/9.jpg",
     },
-    {
-      name: "Madhavi Latha G",
-      role: "Professor",
-      affiliation: "IISC Bangalore",
-      country: "India",
-      image: "/speakers/10.jpg",
-    },
+
     {
       name: "Venkata Dilip Kumar Pasupuleti",
       role: "Professor",

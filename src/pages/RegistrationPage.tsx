@@ -65,7 +65,7 @@ const RegistrationPage: React.FC = () => {
                         Category
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        INDIA (Ends on: Febraury 10, 2026)
+                        INDIA (Ends on: February 10, 2026)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
                         FOREIGN (Ends on: February 10, 2026)
@@ -75,10 +75,10 @@ const RegistrationPage: React.FC = () => {
                   <tbody>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        Academics
+                        Student/Academics
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹5500
+                        ₹10,000
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">$400</td>
                     </tr>
@@ -87,7 +87,7 @@ const RegistrationPage: React.FC = () => {
                         R & D Organizations
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹5500
+                        ₹10,000
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">$400</td>
                     </tr>
@@ -96,31 +96,22 @@ const RegistrationPage: React.FC = () => {
                         Industries
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹6000
+                        ₹12,500
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">$450</td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="py-3 px-4 border-b text-gray-800">
-                        Students
-                      </td>
-                      <td className="py-3 px-4 border-b text-gray-800">
-                        ₹4000
-                      </td>
-                      <td className="py-3 px-4 border-b text-gray-800">$250</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 border-b text-gray-800">
                         Accompanying Person
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹3000
+                        ₹3,000
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">$200</td>
                     </tr>
-                    <tr className="bg-gray-50">
+                    <tr>
                       <td className="py-3 px-4 text-gray-800">Participants</td>
-                      <td className="py-3 px-4 text-gray-800">₹1500</td>
+                      <td className="py-3 px-4 text-gray-800">₹1,500</td>
                       <td className="py-3 px-4 text-gray-800">$100</td>
                     </tr>
                   </tbody>
@@ -154,20 +145,20 @@ const RegistrationPage: React.FC = () => {
                       The Principal, Vishnu Institute of Technology
                     </p>
                     <p className="text-gray-700 mb-2">
-                      <span className="font-medium">Account Number:</span> _ _ _
-                      _ _ _ _ _ _ _
+                      <span className="font-medium">Account Number:</span>{" "}
+                      0787318904
                     </p>
                     <p className="text-gray-700 mb-2">
-                      <span className="font-medium">Account Type:</span> Saving
-                      Account
+                      <span className="font-medium">Account Type:</span>{" "}
+                      Saving Account
                     </p>
                     <p className="text-gray-700 mb-2">
                       <span className="font-medium">IFSC Code:</span>{" "}
                       IDIB000V089
                     </p>
                     <p className="text-gray-700 mb-2">
-                      <span className="font-medium">Bank Name:</span> Indian
-                      Bank
+                      <span className="font-medium">Bank Name:</span>{" "}
+                      Indian Bank
                     </p>
                     <p className="text-gray-700 mb-2">
                       <span className="font-medium">Branch:</span> Vishnupur,

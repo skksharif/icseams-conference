@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Contact the organizers of ICMISI-2026 for any queries related to the conference, paper submissions, registration, or sponsorship."
+        description="Contact the organizers of icmisi-2026 for any queries related to the conference, paper submissions, registration, or sponsorship."
         canonical="/contact"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Get in touch with the ICMISI-2026 organizing team
+            Get in touch with the icmisi-2026 organizing team
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                 Contact Information
               </h2>
               <p className="text-gray-700 mb-8 text-justify">
-                If you have any questions about ICMISI-2026, please don't
+                If you have any questions about icmisi-2026, please don't
                 hesitate to contact us. Our team is here to assist you with any
                 queries related to paper submissions, registration, venue, or
                 other conference matters.
@@ -60,10 +60,10 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <a
-                      href="mailto:ICMISI@VITB.ac.in"
+                      href="mailto:icmisi@vishnu.edu.in"
                       className="text-conference-orange hover:underline"
                     >
-                      ICMISI@VITB.ac.in
+                      icmisi@vishnu.edu.in
                     </a>
                     <p className="text-gray-600 text-sm mt-1">
                       For general inquiries
@@ -78,12 +78,11 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
                     <p className="text-gray-800">
-                      +91 8309463748 (Dr. M Sandeep Kumar)
+                     +91 9553314600 (Dr. V S J Yeswanth Paluri)
                     </p>
                     <div className="mt-4">
-                      <strong>Organizing secretary </strong>
                       <p className="text-gray-800">
-                        +91 9182139090 (Dr. M Vishnu Vardhan Reddy)
+                       +91 7660082181 (Mr. SK.S. Alisha)
                       </p>
                     </div>
                   </div>
@@ -241,10 +240,10 @@ const ContactPage: React.FC = () => {
                   publication:
                 </p>
                 <a
-                  href="mailto:ICMISI.papers@VITB.ac.in"
+                  href="mailto:icmisi.papers@vishnu.edu.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.papers@VITB.ac.in
+                  icmisi.papers@vishnu.edu.in
                 </a>
               </div>
 
@@ -256,10 +255,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to conference registration or payment:
                 </p>
                 <a
-                  href="mailto:ICMISI.registration@VITB.ac.in"
+                  href="mailto:icmisi.registration@vishnu.edu.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.registration@VITB.ac.in
+                  icmisi.registration@vishnu.edu.in
                 </a>
               </div>
 
@@ -271,10 +270,10 @@ const ContactPage: React.FC = () => {
                   For inquiries related to sponsorship opportunities:
                 </p>
                 <a
-                  href="mailto:ICMISI.sponsors@VITB.ac.in"
+                  href="mailto:icmisi.sponsors@vishnu.edu.in"
                   className="text-conference-orange hover:underline text-sm"
                 >
-                  ICMISI.sponsors@VITB.ac.in
+                  icmisi.sponsors@vishnu.edu.in
                 </a>
               </div>
             </div>

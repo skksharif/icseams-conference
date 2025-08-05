@@ -116,7 +116,7 @@ const ImportantDatesPage: React.FC = () => {
           <div className="space-y-4 mb-12">
             <DateItem
               title="Call for Papers Announcement"
-              date="August 1, 2025"
+              date="August 25, 2025"
             />
 
             <DateItem
