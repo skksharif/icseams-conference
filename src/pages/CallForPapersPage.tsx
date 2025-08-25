@@ -143,14 +143,17 @@ const CallForPapersPage: React.FC = () => {
       ],
     },
     {
-      title: "Architecture and Building Engineering",
+      title: "Architecture and Sustainable Built Environments",
       topics: [
-        "Architectural Planning, Design and History",
-        "Architectural Environment",
-        "Regional Environment",
-        "Global Environment",
-        "Urban Planning",
-        "Building Construction and Structures",
+        "Sustainable Building Materials",
+        "Energy Efficient Buildings",
+        "Building Services and Sustainability",
+        "Public Spaces and Landscape Materials",
+        "Disaster Resilient Design Materials",
+        "Rivers and Urban Integration Measures",
+        "Materials Applications and Circular Economy",
+        "Passive Strategies in Building Designing",
+        "Heritage and Adaptive Reuse",
         "Maintenance and Management",
         "Energy Conservation",
         "Material Recycling",
@@ -190,7 +193,7 @@ const CallForPapersPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="container px-4 py-12">
+      <div className=" px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
@@ -203,7 +206,7 @@ const CallForPapersPage: React.FC = () => {
               Explore the thematic tracks below for detailed topics:
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {tracks.map((track, index) => (
                 <div
                   key={index}

@@ -17,6 +17,7 @@ const InternationalTechnicalCommittee: React.FC = () => {
     "B. Krishna Prapoorna, Indian Institute of Technology Tirupathi, India",
     "B. Murali Krishna, VNR Viganana Jyothi Institute of Engineering and Technology, Hyderabad, India",
     "B. Sudhir Kumar, Shri Vishnu Engineering College for Women, Bhimavaram, India",
+    "Dr.C .Anil Kumar ,School of Planning and Architecture, Vijayawada,India",
     "C S R K Prasad, National Institute of Technology Warangal, India",
     "Ch Naga Satish Kumar, Bapatla Engineering College, Bapatla India",
     "Ch. Tirupathi, Sasi Institute of Technology & Engineering, Tadepalligudem, India",
@@ -132,6 +133,7 @@ const InternationalTechnicalCommittee: React.FC = () => {
     "Vishvanath N.Kanthe, Guru Gobind Singh College of Engineering and Research Center, Nashik, India",
     "Y. Amarnath, Ananya Engineers Pvt. Ltd., India",
     "Y. Murali Krishna, Bapatla Engineering College, Bapatla India",
+
   ];
 
   return (

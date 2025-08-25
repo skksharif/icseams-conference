@@ -110,6 +110,13 @@ const SpeakersPage: React.FC = () => {
       country: "Malaysia",
       image: "/speakers/4.jpg",
     },
+    {
+      name:"Prof. Dr. Ramesh Srikonda",
+      role:"Director & Professor",
+      affiliation:"School of Planning and Architecture, Vijayawada",
+      country:"India",
+      image:"/speakers/12.png",
+    }
   ];
 
   const keynotePLACEHOLDER = [
@@ -163,6 +170,27 @@ const SpeakersPage: React.FC = () => {
       country: "India",
       image: "/speakers/11.webp",
     },
+    {
+      name: "Dr.C .Anil Kumar ",
+      role: "Professor",
+      affiliation: "School of Planning and Architecture, Vijayawada",
+      country: "India",
+      image: "/speakers/15.png",
+    },
+    {
+      name: "Dr. Amitav Sarkar",
+      role: "Associate Professor",
+      affiliation: "School of Planning and Architecture, Vijayawada",
+      country: "India",
+      image: "/speakers/13.png",
+    },
+    {
+      name: "Dr. Faiz Ahmad",
+      role: "Associate Professor",
+      affiliation: "School of Planning and Architecture, Vijayawada",
+      country: "India",
+      image: "/speakers/14.png",
+    }
   ];
 
   return (
