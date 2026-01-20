@@ -65,54 +65,49 @@ const RegistrationPage: React.FC = () => {
                         Category
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        INDIA (Ends on: February 10, 2026)
+                        Early Bird Discounted (up to 15 Jan 2024)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        FOREIGN (Ends on: February 10, 2026)
+                        Till 30 Jan 2024
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        Student/Academics
+                        Academicians
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹10,000
+                        ₹5,500
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">$400</td>
+                      <td className="py-3 px-4 border-b text-gray-800">₹6,500</td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="py-3 px-4 border-b text-gray-800">
-                        R & D Organizations
+                        R&D / Industry / Corporate Executives
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹10,000
+                        ₹6,000
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">$400</td>
+                      <td className="py-3 px-4 border-b text-gray-800">₹7,000</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        Industries
+                        Foreign Delegates
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹12,500
+                        $400
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">$450</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="py-3 px-4 border-b text-gray-800">
-                        Accompanying Person
+                      <td className="py-3 px-4 text-gray-800">
+                        Attendee
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">
-                        ₹3,000
+                      <td className="py-3 px-4 text-gray-800">
+                        ₹1,500
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">$200</td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 text-gray-800">Participants</td>
-                      <td className="py-3 px-4 text-gray-800">₹1,500</td>
-                      <td className="py-3 px-4 text-gray-800">$100</td>
+                      <td className="py-3 px-4 text-gray-800">₹2,500</td>
                     </tr>
                   </tbody>
                 </table>
