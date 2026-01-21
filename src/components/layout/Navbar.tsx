@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       isDownload: false,
     },
     { name: "CFP", path: "/call-for-papers" },
-    { name: "Publication", path: "/publication" },
+   // { name: "Publication", path: "/publication" },
     { name: "Speakers", path: "/speakers" },
     { name: "Registration", path: "/registration" },
     { name: "Imp Dates", path: "/important-dates" },
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
       dropdown: [
         {
           name: "Conference Broucher",
-          path: "/downloads/conference_broucher.pdf",
+          path: "/downloads/conference_broucher.jpg",
         },
         {
           name: "Sponsors Brouchers",
@@ -61,9 +61,11 @@ const Navbar: React.FC = () => {
         },
         {
           name: "Full Paper Template",
-          path: "/downloads/full_paper_template.docm",
-        },
-      ],
+          path: "/downloads/full_paper_template.docx",
+        },        {
+          name: "Sample Papers",
+          path: "/downloads/macro-latex-web-conf.zip",
+        },      ],
       isDownload: true,
     },
     {
@@ -89,19 +91,30 @@ const Navbar: React.FC = () => {
     },
   ];
 
+  const handleDownload = (path: string) => {
+    const link = document.createElement('a');
+    link.href = path;
+    link.download = path.split('/').pop() || '';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const renderDropdown = (link: any) => (
     <div className="absolute left-0 mt-0 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 animate-fade-in">
       <div className="py-1">
         {link.dropdown.map((item: any) =>
           link.isDownload ? (
-            <a
+            <button
               key={item.path}
-              href={item.path}
-              download
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-conference-green"
+              onClick={(e) => {
+                e.preventDefault();
+                handleDownload(item.path);
+              }}
+              className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-conference-green cursor-pointer"
             >
               {item.name}
-            </a>
+            </button>
           ) : (
             <NavLink
               key={item.path}
@@ -226,15 +239,17 @@ const Navbar: React.FC = () => {
                       <div className="ml-4 mt-1 border-l-2 border-pink-200 pl-4 animate-fade-in">
                         {link.dropdown.map((item: any) =>
                           link.isDownload ? (
-                            <a
+                            <button
                               key={item.path}
-                              href={item.path}
-                              download
-                              className="block px-3 py-2 text-sm text-gray-700 hover:text-conference-green"
-                              onClick={closeMenu}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                handleDownload(item.path);
+                                closeMenu();
+                              }}
+                              className="block w-full text-left px-3 py-2 text-sm text-gray-700 hover:text-conference-green cursor-pointer"
                             >
                               {item.name}
-                            </a>
+                            </button>
                           ) : (
                             <NavLink
                               key={item.path}

@@ -78,34 +78,34 @@ const RegistrationPage: React.FC = () => {
                         Academicians
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹5,500
+                        ₹12,500
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">₹6,500</td>
+                      <td className="py-3 px-4 border-b text-gray-800">₹13,500</td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="py-3 px-4 border-b text-gray-800">
                         R&D / Industry / Corporate Executives
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        ₹6,000
+                        ₹14,000
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">₹7,000</td>
+                      <td className="py-3 px-4 border-b text-gray-800">₹15,000</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
                         Foreign Delegates
                       </td>
                       <td className="py-3 px-4 border-b text-gray-800">
-                        $400
+                        $350
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">$450</td>
+                      <td className="py-3 px-4 border-b text-gray-800">$400</td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="py-3 px-4 text-gray-800">
                         Attendee
                       </td>
                       <td className="py-3 px-4 text-gray-800">
-                        ₹1,500
+                        ₹2000
                       </td>
                       <td className="py-3 px-4 text-gray-800">₹2,500</td>
                     </tr>

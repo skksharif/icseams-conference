@@ -116,27 +116,27 @@ const ImportantDatesPage: React.FC = () => {
           <div className="space-y-4 mb-12">
             <DateItem
               title="Submission of Abstract"
-              date="15 Dec 2025"
+              date="31 Jan 2026"
             />
 
             <DateItem
               title="Acceptance of Abstract"
-              date="30 Dec 2025"
+              date="07 Feb 2026"
             />
 
             <DateItem
               title="Submission of full length paper"
-              date="02 Jan 2026"
+              date="14 Feb 2026"
             />
 
             <DateItem
               title="Acceptance of full length paper"
-              date="25 Jan 2026"
+              date="09 Mar 2026"
             />
 
             <DateItem
               title="End of registration"
-              date="16 Feb 2026"
+              date="16 Mar 2026"
               isCritical={true}
             />
 
