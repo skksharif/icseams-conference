@@ -37,6 +37,7 @@ const OrganizingCommittee: React.FC = () => {
       name: "K.V. Vishnu Raju",
       role: "Chairman, Sri Vishnu Educational Society",
     },
+
     {
       name: "Ravichandran Rajagopal",
       role: "Vice-Chairman, Sri Vishnu Educational Society",
@@ -60,6 +61,10 @@ const OrganizingCommittee: React.FC = () => {
 
   const chairs = [
     {
+      name: " Shuichi Tori",
+      role: "Conference Chair, Kurume Institute of Technology, JAPAN",
+    },
+    {
       name: "Trilok Nath Singh",
       role: "Conference Chair, Director, IIT Patna, INDIA",
     },
@@ -71,13 +76,16 @@ const OrganizingCommittee: React.FC = () => {
       name: "Edy Tonnizam Mohamad",
       role: "Conference Co-Chair, Universiti Teknologi Malaysia, MALAYSIA",
     },
+  ];
+
+  const technicalChairs = [
     {
       name: "Raju Aedla",
-      role: "Technical Chair, Dean R&D, VEDIC, SVES, INDIA",
+      role: "Technical Chair,Dean, Research and Development, VEDIC, SVES, INDIA",
     },
     {
       name: "Deepak T J",
-      role: "Technical Co-Chair, Universiti Teknologi MARA (UiTM), MALAYSIA",
+      role: "Technical Co-Chair,Universiti Teknologi MARA (UiTM), Selangor, MALAYSIA",
     },
   ];
 
@@ -117,28 +125,24 @@ const OrganizingCommittee: React.FC = () => {
 
   const coreCommittee = [
     { name: "P. Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    { name: "K S. Saikumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "Ch Ananda Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "M. Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "P. Fayaz", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "K. Sree Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    {
-      name: "CH Bharat Chandra",
-      role: "Asst. Prof., Civil Engg., VITB, INDIA",
-    },
+    {name: "CH Bharat Chandra",role: "Asst. Prof., Civil Engg., VITB, INDIA"},
+    { name: "D. J S R Prasad", role: "Prof., Civil Engg., VITB, INDIA" },
   ];
 
   const executiveCommittee = [
     { name: "Sumit Gupta", role: "Professor, CSE, VITB, INDIA" },
     { name: "D.J. Nagendra Kumar", role: "Professor, IT, VITB, INDIA" },
     { name: "N. Padmavathy", role: "Professor, ECE, VITB, INDIA" },
-    { name: "M. Ratna Babu", role: "Professor, AI, VITB, INDIA" },
-    { name: "V. Rama Devi", role: "Professor, BS, VITB, INDIA" },
-    { name: "K. Srinivas", role: "Professor, ECE, VITB, INDIA" },
     { name: "R. Srinivasa Raju", role: "Professor, CSE, VITB, INDIA" },
     { name: "P.S.R. Murty", role: "Professor, IT, VITB, INDIA" },
     { name: "N Naga Krishna", role: "Professor, ME, VITB, INDIA" },
     { name: "R V D Ramarao", role: "Professor, EEE, VITB, INDIA" },
     { name: "D G Krishna Mohan", role: "Professor, CSE, VITB, INDIA" },
+    { name: "S M A K Azad", role: "Professor, ECE, VITB, INDIA" },
   ];
 
   return (
@@ -157,6 +161,7 @@ const OrganizingCommittee: React.FC = () => {
         { title: "Chief Patrons", list: chiefPatrons, type: "chief" },
         { title: "Chief Co-Patrons", list: coPatrons, type: "chief" },
         { title: "Conference Chairs ", list: chairs, type: "chair" },
+        { title: "Technical Chairs", list: technicalChairs, type: "chair" },
         { title: "Organizing Chairs", list: orgChairs, type: "chair" },
         { title: "Secretaries", list: secretaries, type: "secretary" },
         {

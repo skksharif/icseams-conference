@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
       isDownload: false,
     },
     { name: "CFP", path: "/call-for-papers" },
-   // { name: "Publication", path: "/publication" },
+    { name: "Publication", path: "/publication" },
     { name: "Speakers", path: "/speakers" },
     { name: "Registration", path: "/registration" },
     { name: "Imp Dates", path: "/important-dates" },

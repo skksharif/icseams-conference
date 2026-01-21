@@ -84,8 +84,8 @@ const SpeakersPage: React.FC = () => {
   const plenaryPLACEHOLDER = [
     {
       name: "Prof. Shuichi Tori",
-      role: "Assistant Director and Professor",
-      affiliation: "Kumamoto University",
+      role: "Professor",
+      affiliation: "Kurume Institute of Technology",
       country: "Japan",
       image: "/speakers/1.jpg", // add image path
     },
@@ -97,9 +97,9 @@ const SpeakersPage: React.FC = () => {
       image: "/speakers/2.png",
     },
     {
-      name: "Trilok Nath Singh",
-      role: "Director",
-      affiliation: "Indian Institute of Technology Patna",
+      name: "Katta venkataramana",
+      role: "Professor",
+      affiliation: "AICTE Distinguished Professor",
       country: "India",
       image: "/speakers/3.jpg",
     },
@@ -110,23 +110,11 @@ const SpeakersPage: React.FC = () => {
       country: "Malaysia",
       image: "/speakers/4.jpg",
     },
-    {
-      name:"Prof. Dr. Ramesh Srikonda",
-      role:"Director & Professor",
-      affiliation:"School of Planning and Architecture, Vijayawada",
-      country:"India",
-      image:"/speakers/12.png",
-    }
+
   ];
 
   const keynotePLACEHOLDER = [
-    {
-      name: "K Ganesh Babu",
-      role: "Professor",
-      affiliation: "IIT Madras",
-      country: "India",
-      image: "/speakers/5.jpg",
-    },
+
     {
       name: "Daneti Saradhi Babu",
       role: "Director",
@@ -177,19 +165,12 @@ const SpeakersPage: React.FC = () => {
       country: "India",
       image: "/speakers/15.png",
     },
-    {
-      name: "Dr. Amitav Sarkar",
-      role: "Associate Professor",
-      affiliation: "School of Planning and Architecture, Vijayawada",
-      country: "India",
-      image: "/speakers/13.png",
-    },
-    {
-      name: "Dr. Faiz Ahmad",
-      role: "Associate Professor",
-      affiliation: "School of Planning and Architecture, Vijayawada",
-      country: "India",
-      image: "/speakers/14.png",
+        {
+      name:"Prof. Dr. Ramesh Srikonda",
+      role:"Director & Professor",
+      affiliation:"School of Planning and Architecture, Vijayawada",
+      country:"India",
+      image:"/speakers/12.png",
     }
   ];
 
