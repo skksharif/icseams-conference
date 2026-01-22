@@ -3,18 +3,19 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const slides = [
+    {
+    image: "/slides/s1.png",
+    title: "",
+    subtitle: "",
+    showContent: false,
+  },
   {
     image: "/slides/s0.png",
     title: "ICMISI 2026",
     subtitle:
       "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
   },
-  {
-    image: "/slides/s1.png",
-    title: "",
-    subtitle: "",
-    showContent: false,
-  },
+
   {
     image: "/slides/s2.png",
     title: "ICMISI 2026",
