@@ -9,8 +9,17 @@ const slides = [
     subtitle: "",
     showContent: false,
   },
+
   {
     image: "/slides/s0.png",
+    title: "ICMISI 2026",
+    subtitle:
+      "2nd International Conference on Materials Innovation and Sustainable Infrastructure",
+  },
+
+  
+  {
+    image: "/slides/s6.png",
     title: "ICMISI 2026",
     subtitle:
       "2nd International Conference on Materials Innovation and Sustainable Infrastructure",

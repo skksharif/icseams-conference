@@ -106,7 +106,7 @@ const OrganizingCommittee: React.FC = () => {
       role: "Organizing Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram",
     },
     {
-      name: "M Teja",
+      name: "Teja Munaga",
       role: "Joint Secretary, Assoc. Prof., Dept. of CE, VIT-Bhimavaram",
     },
     {
