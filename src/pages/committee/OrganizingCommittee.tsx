@@ -34,7 +34,7 @@ const Member: React.FC<MemberProps> = ({ name, role, type, delay = 0 }) => {
 const OrganizingCommittee: React.FC = () => {
   const chiefPatrons = [
     {
-      name: "K.V. Vishnu Raju",
+      name: "K V Vishnu Raju",
       role: "Chairman, Sri Vishnu Educational Society",
     },
 
@@ -43,18 +43,18 @@ const OrganizingCommittee: React.FC = () => {
       role: "Vice-Chairman, Sri Vishnu Educational Society",
     },
     {
-      name: "K. Aditya Vissam",
+      name: "K Aditya Vissam",
       role: "Secretary, Sri Vishnu Educational Society",
     },
   ];
 
   const coPatrons = [
     {
-      name: "M. Venu",
+      name: "M Venu",
       role: "Principal, Vishnu Institute of Technology, Bhimavaram, INDIA",
     },
     {
-      name: "M. Srilakshmi",
+      name: "M Srilakshmi",
       role: "Vice-Principal, Vishnu Institute of Technology, Bhimavaram, INDIA",
     },
   ];
@@ -110,22 +110,22 @@ const OrganizingCommittee: React.FC = () => {
       role: "Joint Secretary, Assoc. Prof., Dept. of CE, VIT-Bhimavaram",
     },
     {
-      name: "B D V. Prasad",
+      name: "B D V Prasad",
       role: "Joint Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram",
     },
     {
-      name: "B.M Devika",
+      name: "B Mary Devika",
       role: "Joint Secretary, Asst. Prof., Dept. of CE, VIT-Bhimavaram",
     },
   ];
 
   const coreCommittee = [
-    { name: "D. J S R Prasad", role: "Prof., Civil Engg., VITB, INDIA" },
-    { name: "P. Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "J S R Prasad", role: "Prof., Civil Engg., VITB, INDIA" },
+    { name: "P Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "Ch Ananda Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    { name: "M. Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    { name: "P. Fayaz", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    { name: "K. Sree Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "M Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "P Fayaz", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
+    { name: "K Sree Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     {
       name: "Ch Bharath Chandra",
       role: "Asst. Prof., Civil Engg., VITB, INDIA",
@@ -134,10 +134,10 @@ const OrganizingCommittee: React.FC = () => {
 
   const executiveCommittee = [
     { name: "Sumit Gupta", role: "Professor, CSE, VITB, INDIA" },
-    { name: "D.J. Nagendra Kumar", role: "Professor, IT, VITB, INDIA" },
-    { name: "N. Padmavathy", role: "Professor, ECE, VITB, INDIA" },
-    { name: "R. Srinivasa Raju", role: "Professor, CSE, VITB, INDIA" },
-    { name: "P.S.R. Murty", role: "Professor, IT, VITB, INDIA" },
+    { name: "D J Nagendra Kumar", role: "Professor, IT, VITB, INDIA" },
+    { name: "N Padmavathy", role: "Professor, ECE, VITB, INDIA" },
+    { name: "R Srinivasa Raju", role: "Professor, CSE, VITB, INDIA" },
+    { name: "P S R Murty", role: "Professor, IT, VITB, INDIA" },
     { name: "N Naga Krishna", role: "Professor, ME, VITB, INDIA" },
     { name: "R V D Ramarao", role: "Professor, EEE, VITB, INDIA" },
     { name: "D G Krishna Mohan", role: "Professor, CSE, VITB, INDIA" },
