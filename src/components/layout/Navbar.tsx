@@ -60,10 +60,10 @@ const Navbar: React.FC = () => {
           path: "/downloads/sponsership_broucher.pdf",
         },
         {
-          name: "Full Paper Template",
+          name: "Full Paper Template(doc)",
           path: "/downloads/full_paper_template.docx",
         },        {
-          name: "Sample Papers",
+          name: "Full Paper Template(latex)",
           path: "/downloads/macro-latex-web-conf.zip",
         },      ],
       isDownload: true,

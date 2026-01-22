@@ -65,10 +65,10 @@ const RegistrationPage: React.FC = () => {
                         Category
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        Early Bird Discounted (up to 15 Jan 2024)
+                        Early Bird Discounted (up to 10 March 2026)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        Till 30 Jan 2024
+                        Till 30 March 2026
                       </th>
                     </tr>
                   </thead>

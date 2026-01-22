@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+  <script type="module" src="/@vite/client"></script>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="/icmisi.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICMISI-2026 </title>
+  <meta name="description"
+    content="Civil Engineering department at Vishnu Institute of Technology-Bhimavaram is organizing International Conference on Materials Innovation and Sustainable Infrastructure (ICMISI 2026) on 1st & 2nd April 2026. Sustainable infrastructure is crucial for mitigating environmental challenges, such as climate change, resource depletion, and pollution." />
+  <meta name="keywords"
+    content="ICMISI, Conference, Materials Innovation and Sustainable Infrastructure, Advanced Manufacturing, VITB, Engineering Conference" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx?t=1769096120634"></script>
+</body>
+
+</html>

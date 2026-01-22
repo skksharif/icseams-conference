@@ -85,7 +85,7 @@ const SpeakersPage: React.FC = () => {
     {
       name: "Prof. Shuichi Tori",
       role: "Professor",
-      affiliation: "Kurume Institute of Technology",
+      affiliation: "Kurume Institute of Technology, Fukuoka",
       country: "Japan",
       image: "/speakers/1.jpg", // add image path
     },
@@ -122,14 +122,14 @@ const SpeakersPage: React.FC = () => {
       country: "Singapore",
       image: "/speakers/6.png",
     },
-    {
-      name: "Heeralal Mudavath",
-      role: "Professor",
-      affiliation: "NIT Warangal",
-      country: "India",
-      image: "/speakers/7.jpg",
+            {
+      name:"Prof. Dr. Ramesh Srikonda",
+      role:"Director & Professor",
+      affiliation:"School of Planning and Architecture, Vijayawada",
+      country:"India",
+      image:"/speakers/12.png",
     },
-        {
+    {
       name: "Madhavi Latha G",
       role: "Professor",
       affiliation: "IISC Bangalore",
@@ -137,8 +137,22 @@ const SpeakersPage: React.FC = () => {
       image: "/speakers/10.jpg",
     },
     {
-      name: "Rakesh J Pillai",
+      name: "Heeralal Mudavath",
       role: "Professor",
+      affiliation: "NIT Warangal",
+      country: "India",
+      image: "/speakers/7.jpg",
+    },
+    {
+      name: "Dr.C .Anil Kumar ",
+      role: "Professor",
+      affiliation: "School of Planning and Architecture, Vijayawada",
+      country: "India",
+      image: "/speakers/15.png",
+    },
+    {
+      name: "Rakesh J Pillai",
+      role: "Associate Professor",
       affiliation: "IIT Palakkad",
       country: "India",
       image: "/speakers/8.jpg",
@@ -153,25 +167,12 @@ const SpeakersPage: React.FC = () => {
 
     {
       name: "Venkata Dilip Kumar Pasupuleti",
-      role: "Professor",
+      role: "Associate Professor",
       affiliation: "Mahindra University",
       country: "India",
       image: "/speakers/11.webp",
     },
-    {
-      name: "Dr.C .Anil Kumar ",
-      role: "Professor",
-      affiliation: "School of Planning and Architecture, Vijayawada",
-      country: "India",
-      image: "/speakers/15.png",
-    },
-        {
-      name:"Prof. Dr. Ramesh Srikonda",
-      role:"Director & Professor",
-      affiliation:"School of Planning and Architecture, Vijayawada",
-      country:"India",
-      image:"/speakers/12.png",
-    }
+
   ];
 
   return (

@@ -62,11 +62,7 @@ const OrganizingCommittee: React.FC = () => {
   const chairs = [
     {
       name: " Shuichi Tori",
-      role: "Conference Chair, Kurume Institute of Technology, JAPAN",
-    },
-    {
-      name: "Trilok Nath Singh",
-      role: "Conference Chair, Director, IIT Patna, INDIA",
+      role: "Conference Chair, Kurume Institute of Technology,  Fukuoka, JAPAN",
     },
     {
       name: "Krishna R Reddy",
@@ -95,7 +91,7 @@ const OrganizingCommittee: React.FC = () => {
       role: "Organizing Chair, Head, Civil Engg., Vishnu Institute of Technology, Bhimavaram, INDIA",
     },
     {
-      name: "V V S Sharma",
+      name: "V V S Sarma",
       role: "Organizing Co-Chair, Civil Engg., Vishnu Institute of Technology, Bhimavaram, INDIA",
     },
   ];
@@ -124,13 +120,16 @@ const OrganizingCommittee: React.FC = () => {
   ];
 
   const coreCommittee = [
+    { name: "D. J S R Prasad", role: "Prof., Civil Engg., VITB, INDIA" },
     { name: "P. Rohith", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "Ch Ananda Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "M. Manikanta", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "P. Fayaz", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
     { name: "K. Sree Kumar", role: "Asst. Prof., Civil Engg., VITB, INDIA" },
-    {name: "CH Bharat Chandra",role: "Asst. Prof., Civil Engg., VITB, INDIA"},
-    { name: "D. J S R Prasad", role: "Prof., Civil Engg., VITB, INDIA" },
+    {
+      name: "Ch Bharath Chandra",
+      role: "Asst. Prof., Civil Engg., VITB, INDIA",
+    },
   ];
 
   const executiveCommittee = [
