@@ -68,7 +68,7 @@ const RegistrationPage: React.FC = () => {
                         Early Bird Discounted (up to 10 March 2026)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        Till 30 March 2026
+                        Till 23 March 2026
                       </th>
                     </tr>
                   </thead>
@@ -80,7 +80,9 @@ const RegistrationPage: React.FC = () => {
                       <td className="py-3 px-4 border-b text-gray-800">
                         ₹12,500
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">₹13,500</td>
+                      <td className="py-3 px-4 border-b text-gray-800">
+                        ₹13,500
+                      </td>
                     </tr>
                     <tr className="bg-gray-50">
                       <td className="py-3 px-4 border-b text-gray-800">
@@ -89,24 +91,20 @@ const RegistrationPage: React.FC = () => {
                       <td className="py-3 px-4 border-b text-gray-800">
                         ₹14,000
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">₹15,000</td>
+                      <td className="py-3 px-4 border-b text-gray-800">
+                        ₹15,000
+                      </td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
                         Foreign Delegates
                       </td>
-                      <td className="py-3 px-4 border-b text-gray-800">
-                        $350
-                      </td>
+                      <td className="py-3 px-4 border-b text-gray-800">$350</td>
                       <td className="py-3 px-4 border-b text-gray-800">$400</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="py-3 px-4 text-gray-800">
-                        Attendee
-                      </td>
-                      <td className="py-3 px-4 text-gray-800">
-                        ₹2000
-                      </td>
+                      <td className="py-3 px-4 text-gray-800">Attendee</td>
+                      <td className="py-3 px-4 text-gray-800">₹2000</td>
                       <td className="py-3 px-4 text-gray-800">₹2,500</td>
                     </tr>
                   </tbody>
@@ -114,8 +112,11 @@ const RegistrationPage: React.FC = () => {
               </div>
               <div className="p-4 bg-gray-50 border-t">
                 <p className="text-gray-700 text-sm mb-1">
-                  <strong>Note:</strong> Each paper must be registered by one of
-                  its authors to be included in the conference proceedings.
+                  <strong>Note:</strong> Each accepted paper must be registered
+                  by at least one of its authors to be included in the
+                  conference proceedings. The registration fee includes
+                  publication charges. All registered participants will receive
+                  a certificate of participation.
                 </p>
                 <p className="text-gray-700 text-sm">
                   All participants will receive a certificate of participation.
@@ -144,16 +145,16 @@ const RegistrationPage: React.FC = () => {
                       0787318904
                     </p>
                     <p className="text-gray-700 mb-2">
-                      <span className="font-medium">Account Type:</span>{" "}
-                      Saving Account
+                      <span className="font-medium">Account Type:</span> Saving
+                      Account
                     </p>
                     <p className="text-gray-700 mb-2">
                       <span className="font-medium">IFSC Code:</span>{" "}
                       IDIB000V089
                     </p>
                     <p className="text-gray-700 mb-2">
-                      <span className="font-medium">Bank Name:</span>{" "}
-                      Indian Bank
+                      <span className="font-medium">Bank Name:</span> Indian
+                      Bank
                     </p>
                     <p className="text-gray-700 mb-2">
                       <span className="font-medium">Branch:</span> Vishnupur,

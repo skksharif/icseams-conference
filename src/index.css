@@ -59,4 +59,76 @@ p {
   .card-hover {
     @apply hover:shadow-lg hover:-translate-y-1;
   }
+
+ .ticker {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker--fade::before,
+.ticker--fade::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker--fade::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.ticker--fade::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.ticker__content {
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.ticker__track {
+  display: inline-flex;
+  width: max-content;
+  gap: 48px;
+  animation: ticker-move 14s linear infinite;
+  will-change: transform;
+}
+
+.ticker__item {
+  display: inline-block;
+}
+
+.ticker__content:hover .ticker__track,
+.ticker__content:focus .ticker__track,
+.ticker__content:focus-visible .ticker__track {
+  animation-play-state: paused;
+}
+
+/* mobile: a bit faster */
+@media (max-width: 640px) {
+  .ticker__track {
+    animation-duration: 10s;
+    gap: 28px;
+  }
+  .ticker--fade::before,
+  .ticker--fade::after {
+    width: 18px;
+  }
+}
+
+@keyframes ticker-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 }
