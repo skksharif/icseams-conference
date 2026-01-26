@@ -136,7 +136,7 @@ const ImportantDatesPage: React.FC = () => {
 
             <DateItem
               title="End of registration"
-              date="16 Mar 2026"
+              date="23 Mar 2026"
               isCritical={true}
             />
 

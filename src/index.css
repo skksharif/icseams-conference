@@ -79,12 +79,12 @@ p {
 
 .ticker--fade::before {
   left: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(to right, rgba(236, 72, 153, 1), rgba(236, 72, 153, 0));
 }
 
 .ticker--fade::after {
   right: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(to left, rgba(236, 72, 153, 1), rgba(236, 72, 153, 0));
 }
 
 .ticker__content {
