@@ -61,7 +61,7 @@ const OrganizingCommittee: React.FC = () => {
 
   const chairs = [
     {
-      name: " Suichi Torii",
+      name: " Suchi Torii",
       role: "Conference Chair, Kurume Institute of Technology,  Fukuoka, JAPAN",
     },
     {

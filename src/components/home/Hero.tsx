@@ -1,6 +1,6 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, FileText, Pencil, Scroll } from "lucide-react";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
     {
@@ -53,6 +53,10 @@ const slides = [
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
+
+  const scrollToRegistration = () => navigate("/registration");
+  const scrollToCallForPapers = () => navigate("/call-for-papers");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -111,6 +115,44 @@ const Hero: React.FC = () => {
                     VITB, Bhimavaram, Andhra Pradesh, India
                   </span>
                 </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div
+                className="flex flex-col sm:flex-row gap-4 justify-center"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
+                <a
+                  href="/downloads/full_paper_template.docx"
+                  download
+                  className="flex items-center justify-center gap-2 px-4 py-2 bg-white text-conference-green border border-conference-green rounded-lg text-base sm:text-lg hover:bg-pink-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Paper Template
+                </a>
+                <button
+                  onClick={scrollToRegistration}
+                  className="flex items-center justify-center gap-2 px-4 py-2 bg-conference-green text-white rounded-lg text-base sm:text-lg hover:bg-conference-purple transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Pencil className="w-5 h-5" />
+                  Register Now
+                </button>
+                <button
+                  onClick={scrollToCallForPapers}
+                  className="flex items-center justify-center gap-2 px-3 py-2 bg-conference-orange text-white rounded-lg text-base sm:text-lg hover:bg-conference-purple transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Calendar className="w-5 h-5" />
+                  Call for Papers
+                </button>
+                <a
+                  href="/downloads/conference_broucher.jpg"
+                  download
+                  className="flex items-center justify-center gap-2 px-4 py-2 bg-white text-conference-green border border-conference-green rounded-lg text-base sm:text-lg hover:bg-pink-50 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  <Scroll className="w-5 h-5" />
+                  Broucher
+                </a>
               </div>
             </div>
           )}

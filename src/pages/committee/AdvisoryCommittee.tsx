@@ -17,7 +17,7 @@ const InternationalAdvisoryCommittee: React.FC = () => {
     "Sai Vanapalli, University of Ottawa, Canada",
     "Sanjay Kumar Shukla, Edith Cowan University, Australia",
     "Shen-en-Chen, University of North Carolina, USA",
-    "Suichi Torii, Kurume Institute of Technology, Fukuoka, Japan",
+    "Suchi Torii, Kurume Institute of Technology, Fukuoka, Japan",
     "Srinivas S Pulugurtha, University of North Carolina, USA",
     "Sudharma Yatigammana, PGIS, University of Peradeniya, Sri Lanka",
     "Upaka Rathnayake, Atlantic Technological University, Sligo, Ireland",
