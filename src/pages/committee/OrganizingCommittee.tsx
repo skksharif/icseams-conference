@@ -133,10 +133,10 @@ const OrganizingCommittee: React.FC = () => {
   ];
 
   const executiveCommittee = [
-    { name: "B. TIRUMALA RAO", role: "Professor, BS, VITB, INDIA" },
-    { name: "G.RAMA SWAMY", role: "Assoc. Professor, BS ,VITB, INDIA" },
-    { name: "M.VIJAYA LAKSHMI", role: "Assoc. Professor, BS, VITB, INDIA" },
-    { name: "R.L.N.PRADEEP KUMAR", role: "Assoc. Professor, BS, VITB, INDIA" },
+    { name: "B. Tirumala Rao", role: "Professor, BS, VITB, INDIA" },
+    { name: "G. Rama Swamy", role: "Assoc. Professor, BS ,VITB, INDIA" },
+    { name: "M.Vijaya Lakshmi", role: "Assoc. Professor, BS, VITB, INDIA" },
+    { name: "R.L.N.Prdeep Kumar", role: "Assoc. Professor, BS, VITB, INDIA" },
     { name: "Sumit Gupta", role: "Professor, CSE, VITB, INDIA" },
     { name: "D J Nagendra Kumar", role: "Professor, IT, VITB, INDIA" },
     { name: "N Padmavathy", role: "Professor, ECE, VITB, INDIA" },
