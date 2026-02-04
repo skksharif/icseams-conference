@@ -83,7 +83,7 @@ const Speaker: React.FC<SpeakerProps> = ({
 const SpeakersPage: React.FC = () => {
   const plenaryPLACEHOLDER = [
     {
-      name: "Prof. Suchi Torii",
+      name: "Prof. Shuichi TORII",
       role: "Professor",
       affiliation: "Kurume Institute of Technology, Fukuoka",
       country: "Japan",

@@ -61,7 +61,7 @@ const OrganizingCommittee: React.FC = () => {
 
   const chairs = [
     {
-      name: " Suchi Torii",
+      name: " Shuichi TORII ",
       role: "Conference Chair, Kurume Institute of Technology,  Fukuoka, JAPAN",
     },
     {
@@ -133,6 +133,10 @@ const OrganizingCommittee: React.FC = () => {
   ];
 
   const executiveCommittee = [
+    { name: "B. TIRUMALA RAO", role: "Professor, BS, VITB, INDIA" },
+    { name: "G.RAMA SWAMY", role: "Assoc. Professor, BS ,VITB, INDIA" },
+    { name: "M.VIJAYA LAKSHMI", role: "Assoc. Professor, BS, VITB, INDIA" },
+    { name: "R.L.N.PRADEEP KUMAR", role: "Assoc. Professor, BS, VITB, INDIA" },
     { name: "Sumit Gupta", role: "Professor, CSE, VITB, INDIA" },
     { name: "D J Nagendra Kumar", role: "Professor, IT, VITB, INDIA" },
     { name: "N Padmavathy", role: "Professor, ECE, VITB, INDIA" },
